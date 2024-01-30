@@ -7,7 +7,7 @@ import { ThemeToggle } from './theme/theme-toggle'
 export function Header() {
   return (
     <>
-      <div className="sticky top-0 z-50">
+      <div className="sticky top-0 z-50 bg-zinc-50 dark:bg-zinc-950">
         <div className="flex h-16 items-center justify-between gap-6 px-6">
           <Link to="/">
             <Computer className="text-md font-bold text-foreground" />
