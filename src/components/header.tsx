@@ -1,4 +1,5 @@
 import { Computer } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 import { NavLink } from './nav-link'
 import { ThemeToggle } from './theme/theme-toggle'
@@ -8,10 +9,12 @@ export function Header() {
   return (
     <div className="border-b">
       <div className="flex h-16 items-center gap-6 px-6">
-        <Computer className="text-md font-bold text-foreground" />
-        <h1 className="text-md font-bold text-foreground">
-          Smithson do Brasil
-        </h1>
+        <Link to="/" className="flex items-center gap-2">
+          <Computer className="text-md font-bold text-foreground" />
+          <h1 className="text-md font-bold text-foreground">
+            Smithson do Brasil
+          </h1>
+        </Link>
 
         <Separator orientation="vertical" className="h-6" />
 
