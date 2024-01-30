@@ -1,11 +1,11 @@
 import { Helmet } from 'react-helmet-async'
 
-export function Home() {
+export function Services() {
   return (
     <>
-      <Helmet title="Home" />
+      <Helmet title="Nossos serviços" />
       <div className="flex h-screen items-center justify-center">
-        <h1>Home</h1>
+        <h1>Nossos serviços</h1>
       </div>
     </>
   )

@@ -7,7 +7,7 @@ import { Separator } from './ui/separator'
 
 export function Header() {
   return (
-    <div className="border-b">
+    <div className="sticky top-0 z-50 border-b">
       <div className="flex h-16 items-center gap-6 px-6">
         <Link to="/" className="flex items-center gap-2">
           <Computer className="text-md font-bold text-foreground" />
