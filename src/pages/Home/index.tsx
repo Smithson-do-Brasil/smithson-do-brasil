@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 
 import { Carousel } from './components/carousel'
+import { Dna } from './components/dna'
 
 export function Home() {
   useEffect(() => {
@@ -18,7 +19,11 @@ export function Home() {
     <>
       <Helmet title="Home" />
       <div className="flex flex-col items-center justify-center gap-4 lg:gap-8">
-        <Carousel />
+        <div>
+          <Carousel />
+
+          <Dna />
+        </div>
 
         <section
           className="container flex flex-col items-center justify-between gap-6 py-8 lg:flex-row xl:h-screen xl:gap-20"
