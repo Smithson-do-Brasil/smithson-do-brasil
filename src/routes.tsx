@@ -3,7 +3,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import { NotFound } from './pages/404'
 import { AboutUs } from './pages/about-us'
 import { Contact } from './pages/contact'
-import { Home } from './pages/home'
+import { Home } from './pages/Home'
 import { Layout } from './pages/layout'
 import { Services } from './pages/services'
 
