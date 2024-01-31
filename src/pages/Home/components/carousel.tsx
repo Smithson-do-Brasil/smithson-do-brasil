@@ -13,19 +13,19 @@ export function Carousel() {
         loop: true,
       }}
     >
-      <CarouselContent>
+      <CarouselContent className="h-[60vh]">
         <CarouselItem>
-          <div className="relative">
+          <div className="relative h-full">
             <div className="absolute h-full w-full bg-zinc-950 opacity-70"></div>
             <img
               src="banner.png"
-              alt=""
-              className="hidden w-full bg-cover md:block"
+              alt="Banner"
+              className="hidden h-full w-full object-cover md:block"
             />
             <img
               src="banner-mobile.png"
-              alt=""
-              className="w-full bg-cover lg:hidden"
+              alt="Banner"
+              className="h-full w-full object-cover lg:hidden"
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">
@@ -40,17 +40,17 @@ export function Carousel() {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="relative">
+          <div className="relative h-full">
             <div className="absolute h-full w-full bg-zinc-950 opacity-70"></div>
             <img
               src="banner.png"
-              alt=""
-              className="hidden w-full bg-cover md:block"
+              alt="Banner"
+              className="hidden h-full w-full object-cover md:block"
             />
             <img
               src="banner-mobile.png"
-              alt=""
-              className="w-full bg-cover lg:hidden"
+              alt="Banner"
+              className="h-full w-full object-cover lg:hidden"
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">
@@ -65,17 +65,17 @@ export function Carousel() {
           </div>
         </CarouselItem>
         <CarouselItem>
-          <div className="relative">
+          <div className="relative h-full">
             <div className="absolute h-full w-full bg-zinc-950 opacity-70"></div>
             <img
               src="banner.png"
-              alt=""
-              className="hidden w-full bg-cover md:block"
+              alt="Banner"
+              className="hidden h-full w-full object-cover md:block"
             />
             <img
               src="banner-mobile.png"
-              alt=""
-              className="w-full bg-cover lg:hidden"
+              alt="Banner"
+              className="h-full w-full object-cover lg:hidden"
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">

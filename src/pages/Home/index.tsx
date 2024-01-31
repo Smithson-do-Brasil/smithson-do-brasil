@@ -1,3 +1,7 @@
+import 'aos/dist/aos.css'
+
+import AOS from 'aos'
+import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 
@@ -6,13 +10,21 @@ import { Button } from '@/components/ui/button'
 import { Carousel } from './components/carousel'
 
 export function Home() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <>
       <Helmet title="Home" />
       <div className="flex flex-col items-center justify-center gap-4 lg:gap-8">
         <Carousel />
 
-        <section className="container flex flex-col items-center justify-between gap-6 py-8 lg:flex-row lg:gap-20">
+        <section
+          className="container flex h-screen flex-col items-center justify-between gap-6 py-8 lg:flex-row lg:gap-20"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="flex flex-col items-start gap-6">
             <h1 className="text-4xl font-medium text-foreground lg:text-6xl">
               Materializamos estratégias em soluções digitais
