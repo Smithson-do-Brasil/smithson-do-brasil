@@ -1,13 +1,13 @@
 import { Helmet } from 'react-helmet-async'
 
-import { Banner } from './components/banner'
+import { Carousel } from './components/carousel'
 
 export function Home() {
   return (
     <>
       <Helmet title="Home" />
       <div className="flex items-center justify-center">
-        <Banner />
+        <Carousel />
       </div>
     </>
   )
