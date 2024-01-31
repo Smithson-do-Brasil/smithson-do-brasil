@@ -15,7 +15,7 @@ import { Separator } from '../ui/separator'
 
 export function Mobile() {
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between p-4 lg:hidden">
+    <header className="sticky top-0 z-50 flex items-center justify-between p-4 lg:hidden">
       <Drawer direction="left">
         <DrawerTrigger>
           <Button className="bg-transparent">
@@ -55,6 +55,6 @@ export function Mobile() {
       <div className="flex items-center">
         <ThemeToggle />
       </div>
-    </div>
+    </header>
   )
 }
