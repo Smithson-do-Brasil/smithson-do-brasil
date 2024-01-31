@@ -1,13 +1,13 @@
 import { Computer } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-import { NavLink } from './nav-link'
-import { ThemeToggle } from './theme/theme-toggle'
+import { NavLink } from '../nav-link'
+import { ThemeToggle } from '../theme/theme-toggle'
 
-export function Header() {
+export function Desktop() {
   return (
     <>
-      <div className="sticky top-0 z-50 bg-zinc-50 dark:bg-zinc-950">
+      <div className="sticky top-0 z-50 hidden bg-zinc-50 dark:bg-zinc-950 lg:block">
         <div className="flex h-16 items-center justify-between gap-6 px-6">
           <Link to="/">
             <Computer className="text-md font-bold text-foreground" />
