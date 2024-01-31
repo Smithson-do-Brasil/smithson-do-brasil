@@ -2,8 +2,6 @@ import {
   Carousel as ShadcnCarousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from '@/components/ui/carousel'
 
 export function Carousel() {
@@ -90,8 +88,6 @@ export function Carousel() {
           </div>
         </CarouselItem>
       </CarouselContent>
-      <CarouselPrevious className="left-3" />
-      <CarouselNext className="right-3" />
     </ShadcnCarousel>
   )
 }
