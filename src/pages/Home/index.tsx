@@ -21,16 +21,16 @@ export function Home() {
         <Carousel />
 
         <section
-          className="container flex h-screen flex-col items-center justify-between gap-6 py-8 lg:flex-row lg:gap-20"
+          className="container flex flex-col items-center justify-between gap-6 py-8 lg:flex-row xl:h-screen xl:gap-20"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
           <div className="flex flex-col items-start gap-6">
-            <h1 className="text-4xl font-medium text-foreground lg:text-6xl">
+            <h1 className="text-4xl font-medium text-foreground xl:text-6xl">
               Materializamos estratégias em soluções digitais
             </h1>
 
-            <p className="text-xl text-muted-foreground lg:text-2xl">
+            <p className="text-xl text-muted-foreground xl:text-2xl">
               Na era da Transformação Digital, o nosso propósito é acelerar os
               negócios dos nossos clientes com inteligência e tecnologia. Aqui,
               toda jornada de transformação é tratada como única.
@@ -43,7 +43,7 @@ export function Home() {
             </Link>
           </div>
 
-          <img src="image.svg" alt="" />
+          <img src="image.svg" alt="" className="w-full" />
         </section>
       </div>
     </>
