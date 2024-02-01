@@ -45,7 +45,7 @@ export function Form() {
   return (
     <form
       onSubmit={handleSubmit(handleSignUp)}
-      className="w-full space-y-4 rounded-lg bg-[#4C6FF7] p-8 dark:bg-zinc-800 lg:w-2/4"
+      className="w-full space-y-4 rounded-lg bg-zinc-200 p-8 dark:bg-zinc-800 lg:w-2/4"
     >
       <div className="space-y-1">
         <Label htmlFor="firstName" className="text-zinc-950 dark:text-zinc-50">
@@ -54,7 +54,7 @@ export function Form() {
         <Input
           id="firstName"
           type="text"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('firstName')}
         />
       </div>
@@ -65,7 +65,7 @@ export function Form() {
         <Input
           id="lastName"
           type="text"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('lastName')}
         />
       </div>
@@ -76,7 +76,7 @@ export function Form() {
         <Input
           id="email"
           type="text"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('email')}
         />
       </div>
@@ -87,7 +87,7 @@ export function Form() {
         <Input
           id="tel"
           type="tel"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('tel')}
         />
       </div>
@@ -97,7 +97,7 @@ export function Form() {
         </Label>
         <Textarea
           id="message"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('message')}
         />
       </div>
