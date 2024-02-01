@@ -22,6 +22,7 @@ export function Form() {
     register,
     handleSubmit,
     formState: { isSubmitting },
+    reset,
   } = useForm<ContactForm>()
 
   async function handleSignUp(data: ContactForm) {
@@ -34,10 +35,13 @@ export function Form() {
         duration: 5000,
         icon: '📬',
       })
+
+      reset()
     } catch {
       toast.error('Erro ao cadastrar restaurante.')
     }
   }
+
   return (
     <form
       onSubmit={handleSubmit(handleSignUp)}
@@ -50,8 +54,8 @@ export function Form() {
         <Input
           id="firstName"
           type="text"
-          {...register('firstName')}
           className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          {...register('firstName')}
         />
       </div>
       <div className="space-y-1">
@@ -61,8 +65,8 @@ export function Form() {
         <Input
           id="lastName"
           type="text"
-          {...register('lastName')}
           className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          {...register('lastName')}
         />
       </div>
       <div className="space-y-1">
@@ -72,8 +76,8 @@ export function Form() {
         <Input
           id="email"
           type="text"
-          {...register('email')}
           className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          {...register('email')}
         />
       </div>
       <div className="space-y-1">
@@ -83,8 +87,8 @@ export function Form() {
         <Input
           id="tel"
           type="tel"
-          {...register('tel')}
           className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          {...register('tel')}
         />
       </div>
       <div className="space-y-1">
@@ -93,8 +97,8 @@ export function Form() {
         </Label>
         <Textarea
           id="message"
-          {...register('message')}
           className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          {...register('message')}
         />
       </div>
       <Button
