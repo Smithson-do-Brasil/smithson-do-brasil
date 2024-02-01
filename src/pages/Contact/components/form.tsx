@@ -45,65 +45,65 @@ export function Form() {
   return (
     <form
       onSubmit={handleSubmit(handleSignUp)}
-      className="w-2/4 space-y-4 rounded-lg bg-zinc-800 p-8"
+      className="w-full space-y-4 rounded-lg bg-[#4C6FF7] p-8 dark:bg-zinc-800 lg:w-2/4"
     >
       <div className="space-y-1">
-        <Label htmlFor="firstName" className="text-zinc-50">
+        <Label htmlFor="firstName" className="text-zinc-950 dark:text-zinc-50">
           Nome<span className="text-red-500">*</span>
         </Label>
         <Input
           id="firstName"
           type="text"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('firstName')}
         />
       </div>
       <div className="space-y-1">
-        <Label htmlFor="lastName" className="text-zinc-50">
+        <Label htmlFor="lastName" className="text-zinc-950 dark:text-zinc-50">
           Sobrenome<span className="text-red-500">*</span>
         </Label>
         <Input
           id="lastName"
           type="text"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('lastName')}
         />
       </div>
       <div className="space-y-1">
-        <Label htmlFor="email" className="text-zinc-50">
+        <Label htmlFor="email" className="text-zinc-950 dark:text-zinc-50">
           Seu melhor e-mail<span className="text-red-500">*</span>
         </Label>
         <Input
           id="email"
           type="text"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('email')}
         />
       </div>
       <div className="space-y-1">
-        <Label htmlFor="tel" className="text-zinc-50">
+        <Label htmlFor="tel" className="text-zinc-950 dark:text-zinc-50">
           Telefone (com DDD)<span className="text-red-500">*</span>
         </Label>
         <Input
           id="tel"
           type="tel"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('tel')}
         />
       </div>
       <div className="space-y-1">
-        <Label htmlFor="message" className="text-zinc-50">
+        <Label htmlFor="message" className="text-zinc-950 dark:text-zinc-50">
           Mensagem<span className="text-red-500">*</span>
         </Label>
         <Textarea
           id="message"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-b-zinc-50 bg-zinc-800 pl-0 font-medium text-zinc-50 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
           {...register('message')}
         />
       </div>
       <Button
         disabled={isSubmitting}
-        className="w-1/3 bg-[#4C6FF7] text-zinc-50 hover:bg-[#4C6FF7] hover:brightness-90"
+        className="w-max bg-[#4C6FF7] text-lg text-zinc-50 hover:bg-[#4C6FF7] hover:brightness-90"
         type="submit"
       >
         Entrar em contato

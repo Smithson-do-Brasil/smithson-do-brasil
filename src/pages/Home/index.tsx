@@ -57,7 +57,7 @@ export function Home() {
         </h1>
 
         <Link to="/contact">
-          <Button className="bg-zinc-50 text-lg text-zinc-950 lg:text-xl">
+          <Button className="bg-zinc-50 text-lg text-zinc-950 hover:bg-zinc-50 hover:brightness-90 dark:bg-zinc-950 dark:text-zinc-50 lg:text-xl">
             Entre em contato
           </Button>
         </Link>

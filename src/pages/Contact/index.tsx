@@ -6,7 +6,7 @@ export function Contact() {
   return (
     <>
       <Helmet title="Contato" />
-      <div className="container flex h-screen flex-col items-center justify-center gap-12">
+      <div className="container flex flex-col items-center justify-center gap-12 py-12 md:h-screen">
         <div className="flex flex-col items-center gap-4">
           <h1 className="text-5xl">Fale conosco</h1>
 
@@ -18,7 +18,7 @@ export function Contact() {
 
         <Form />
 
-        <div className="flex flex-col gap-4">
+        {/* <div className="flex flex-col gap-4">
           <h1 className="text-xl font-bold text-muted-foreground">
             Se preferir, fale conosco pelo telefone abaixo:
           </h1>
@@ -31,7 +31,7 @@ export function Contact() {
           >
             (21) 964443-0605
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   )
