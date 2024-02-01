@@ -27,10 +27,10 @@ export function Carousel() {
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">
-              <h1 className="text-2xl font-bold text-foreground text-zinc-50 lg:text-5xl">
+              <h1 className="text-2xl font-bold text-zinc-50 lg:text-5xl">
                 Há mais de 30 anos acelerando negócios
               </h1>
-              <p className="text-sm font-semibold text-zinc-100 lg:text-xl">
+              <p className="text-sm font-semibold text-muted-foreground lg:text-xl">
                 Soluções digitais de alto impacto com inteligência e tecnologia
                 para gigantes do mercado
               </p>
@@ -52,10 +52,10 @@ export function Carousel() {
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">
-              <h1 className="text-2xl font-bold text-foreground text-zinc-50 lg:text-5xl">
+              <h1 className="text-2xl font-bold text-zinc-50 lg:text-5xl">
                 Há mais de 30 anos acelerando negócios
               </h1>
-              <p className="text-sm font-semibold text-zinc-100 lg:text-xl">
+              <p className="text-sm font-semibold text-muted-foreground lg:text-xl">
                 Soluções digitais de alto impacto com inteligência e tecnologia
                 para gigantes do mercado
               </p>
@@ -77,10 +77,10 @@ export function Carousel() {
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">
-              <h1 className="text-2xl font-bold text-foreground text-zinc-50 lg:text-5xl">
+              <h1 className="text-2xl font-bold text-zinc-50 lg:text-5xl">
                 Há mais de 30 anos acelerando negócios
               </h1>
-              <p className="font-semibold text-zinc-100 sm:text-sm lg:text-xl">
+              <p className="font-semibold text-muted-foreground sm:text-sm lg:text-xl">
                 Soluções digitais de alto impacto com inteligência e tecnologia
                 para gigantes do mercado
               </p>

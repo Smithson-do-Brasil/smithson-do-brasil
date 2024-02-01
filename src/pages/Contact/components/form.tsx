@@ -48,56 +48,56 @@ export function Form() {
       className="w-full space-y-4 rounded-lg bg-zinc-200 p-8 dark:bg-zinc-800 lg:w-2/4"
     >
       <div className="space-y-1">
-        <Label htmlFor="firstName" className="text-zinc-950 dark:text-zinc-50">
+        <Label htmlFor="firstName" className="text-foreground">
           Nome<span className="text-red-500">*</span>
         </Label>
         <Input
           id="firstName"
           type="text"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-foreground focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800"
           {...register('firstName')}
         />
       </div>
       <div className="space-y-1">
-        <Label htmlFor="lastName" className="text-zinc-950 dark:text-zinc-50">
+        <Label htmlFor="lastName" className="text-foreground">
           Sobrenome<span className="text-red-500">*</span>
         </Label>
         <Input
           id="lastName"
           type="text"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-foreground focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800"
           {...register('lastName')}
         />
       </div>
       <div className="space-y-1">
-        <Label htmlFor="email" className="text-zinc-950 dark:text-zinc-50">
+        <Label htmlFor="email" className="text-foreground">
           Seu melhor e-mail<span className="text-red-500">*</span>
         </Label>
         <Input
           id="email"
           type="text"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-foreground focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800"
           {...register('email')}
         />
       </div>
       <div className="space-y-1">
-        <Label htmlFor="tel" className="text-zinc-950 dark:text-zinc-50">
+        <Label htmlFor="tel" className="text-foreground">
           Telefone (com DDD)<span className="text-red-500">*</span>
         </Label>
         <Input
           id="tel"
           type="tel"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-foreground focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800"
           {...register('tel')}
         />
       </div>
       <div className="space-y-1">
-        <Label htmlFor="message" className="text-zinc-950 dark:text-zinc-50">
+        <Label htmlFor="message" className="text-foreground">
           Mensagem<span className="text-red-500">*</span>
         </Label>
         <Textarea
           id="message"
-          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-zinc-950 focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800 dark:text-zinc-50"
+          className="rounded-none border-x-0 border-b-2 border-t-0 border-zinc-950 bg-zinc-200 pl-0 font-medium text-foreground focus-visible:border-b-[#4C6FF7] focus-visible:shadow-transparent focus-visible:ring-transparent focus-visible:ring-offset-0 dark:border-b-zinc-50 dark:bg-zinc-800"
           {...register('message')}
         />
       </div>

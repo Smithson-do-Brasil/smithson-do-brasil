@@ -8,7 +8,7 @@ export function Contact() {
       <Helmet title="Contato" />
       <div className="container flex flex-col items-center justify-center gap-12 py-12 md:h-screen">
         <div className="flex flex-col items-center gap-4">
-          <h1 className="text-5xl">Fale conosco</h1>
+          <h1 className="text-5xl text-foreground">Fale conosco</h1>
 
           <p className="text-xl text-muted-foreground">
             Agradecemos o seu interesse em nos procurar. Use o formulário abaixo
