@@ -15,7 +15,7 @@ import { Separator } from './ui/separator'
 export function Header() {
   return (
     <>
-      <header className="sticky top-0 z-50 hidden bg-zinc-50 dark:bg-zinc-950 lg:block">
+      <header className="sticky top-0 z-50 hidden  bg-[rgba(255,255,255,0.5)] dark:bg-[rgba(0,0,0,0.5)] lg:block">
         <div className="flex h-16 items-center justify-between gap-6 px-6">
           <Link to="/">
             <Computer className="text-foreground" size={28} />
