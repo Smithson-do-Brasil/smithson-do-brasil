@@ -10,7 +10,6 @@ import {
 
 import { NavLink } from './nav-link'
 import { ThemeToggle } from './theme/theme-toggle'
-import { Button } from './ui/button'
 import { Separator } from './ui/separator'
 
 export function Header() {
@@ -35,10 +34,8 @@ export function Header() {
       </header>
       <header className="sticky top-0 z-50 flex items-center justify-between bg-zinc-50 p-4 dark:bg-zinc-950 lg:hidden">
         <Drawer direction="left">
-          <DrawerTrigger>
-            <Button className="bg-transparent">
-              <Menu className="text-zinc-950 dark:text-zinc-50" />
-            </Button>
+          <DrawerTrigger className="bg-transparent">
+            <Menu className="text-zinc-950 dark:text-zinc-50" />
           </DrawerTrigger>
           <DrawerContent className="flex h-full w-[50%] flex-col">
             <DrawerHeader className="flex w-full items-center justify-start gap-2 p-4">
