@@ -5,7 +5,7 @@ import { AboutUs } from './pages/about-us'
 import { Contact } from './pages/Contact'
 import { Home } from './pages/Home'
 import { Layout } from './pages/layout'
-import { Services } from './pages/services'
+import { Services } from './pages/Services'
 
 export const router = createBrowserRouter([
   {
