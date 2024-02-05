@@ -22,6 +22,7 @@ export function Header() {
           </Link>
 
           <nav className="flex items-center space-x-4 lg:space-x-6">
+            <NavLink to="/">Home</NavLink>
             <NavLink to="/about-us">Sobre nós</NavLink>
             <NavLink to="/services">Nossos serviços</NavLink>
             <NavLink to="/contact">Contato</NavLink>
@@ -58,6 +59,9 @@ export function Header() {
             <Separator className="w-full bg-zinc-950 dark:bg-zinc-50" />
 
             <nav className="flex flex-col space-y-4 p-4 lg:space-y-6">
+              <NavLink to="/" className="text-sm font-medium">
+                Home
+              </NavLink>
               <NavLink to="/about-us" className="text-sm font-medium">
                 Sobre nós
               </NavLink>
