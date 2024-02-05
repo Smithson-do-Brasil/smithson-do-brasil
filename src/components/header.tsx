@@ -1,4 +1,5 @@
 import { Computer, Facebook, Instagram, Menu } from 'lucide-react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import {
@@ -13,6 +14,8 @@ import { ThemeToggle } from './theme/theme-toggle'
 import { Separator } from './ui/separator'
 
 export function Header() {
+  const [open, setOpen] = useState(false)
+
   return (
     <>
       <header className="sticky top-0 z-50 hidden  bg-[rgba(255,255,255,0.5)] dark:bg-[rgba(0,0,0,0.5)] lg:block">
@@ -34,8 +37,11 @@ export function Header() {
         </div>
       </header>
       <header className="sticky top-0 z-50 flex items-center justify-between bg-zinc-50 p-4 dark:bg-zinc-950 lg:hidden">
-        <Drawer direction="left">
-          <DrawerTrigger className="bg-transparent">
+        <Drawer direction="left" open={open} onOpenChange={setOpen}>
+          <DrawerTrigger
+            className="bg-transparent"
+            onClick={() => setOpen(true)}
+          >
             <Menu className="text-zinc-950 dark:text-zinc-50" />
           </DrawerTrigger>
           <DrawerContent className="flex h-full w-[50%] flex-col">
@@ -59,16 +65,32 @@ export function Header() {
             <Separator className="w-full bg-zinc-950 dark:bg-zinc-50" />
 
             <nav className="flex flex-col space-y-4 p-4 lg:space-y-6">
-              <NavLink to="/" className="text-sm font-medium">
+              <NavLink
+                to="/"
+                className="text-sm font-medium"
+                onClick={() => setOpen(false)}
+              >
                 Home
               </NavLink>
-              <NavLink to="/about-us" className="text-sm font-medium">
+              <NavLink
+                to="/about-us"
+                className="text-sm font-medium"
+                onClick={() => setOpen(false)}
+              >
                 Sobre nós
               </NavLink>
-              <NavLink to="/services" className="text-sm font-medium">
+              <NavLink
+                to="/services"
+                className="text-sm font-medium"
+                onClick={() => setOpen(false)}
+              >
                 Nossos serviços
               </NavLink>
-              <NavLink to="/contact" className="text-sm font-medium">
+              <NavLink
+                to="/contact"
+                className="text-sm font-medium"
+                onClick={() => setOpen(false)}
+              >
                 Contato
               </NavLink>
             </nav>
