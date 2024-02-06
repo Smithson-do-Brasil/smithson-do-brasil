@@ -1,7 +1,7 @@
-import { PartnersItem, PartnersItemProps } from './partners-item'
+import { Partners as PartnersData, PartnersItem } from './partners-item'
 
 export function Partners() {
-  const partners: PartnersItemProps[] = [
+  const partners: PartnersData[] = [
     {
       image: 'empresas-parceiras/bom-pastor.png',
       title: 'Bom Pastor',
@@ -13,12 +13,12 @@ export function Partners() {
       url: 'https://www.lisclinica.com.br',
     },
     {
-      image: 'empresas-parceiras/refrigerantes-convencao.webp',
+      image: 'empresas-parceiras/refrigerantes-convencao.png',
       title: 'Refrigerantes Convenção',
       url: 'https://www.refrigerantesconvencao.com.br',
     },
     {
-      image: 'empresas-parceiras/luiz-mendes.webp',
+      image: 'empresas-parceiras/luiz-mendes.png',
       title: 'Luiz Mendes Advocacia e Assessoria Jurídica',
       url: 'https://luizmendesadv.com.br/',
     },
@@ -90,16 +90,7 @@ export function Partners() {
         Empresas que confiam no nosso trabalho
       </h1>
 
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
-        {partners.map((partner, index) => (
-          <PartnersItem
-            key={index}
-            image={partner.image}
-            title={partner.title}
-            url={partner.url}
-          />
-        ))}
-      </div>
+      <PartnersItem data={partners} />
     </section>
   )
 }
