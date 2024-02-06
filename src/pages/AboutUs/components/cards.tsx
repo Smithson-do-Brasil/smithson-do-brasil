@@ -3,9 +3,9 @@ import { CardItem, CardItemProps } from './card-item'
 export function Cards() {
   const cards: CardItemProps[] = [
     { number: '25', title: 'anos de experiência' },
-    { number: '20', title: 'empresas clientes' },
-    { number: '20', title: 'empresas clientes' },
-    { number: '20', title: 'empresas clientes' },
+    { number: '30', title: 'soluções' },
+    { number: '35', title: 'projetos' },
+    { number: '15', title: 'empresas clientes' },
   ]
 
   return (
