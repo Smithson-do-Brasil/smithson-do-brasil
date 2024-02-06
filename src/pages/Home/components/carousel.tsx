@@ -1,3 +1,5 @@
+import Autoplay from 'embla-carousel-autoplay'
+
 import {
   Carousel as ShadcnCarousel,
   CarouselContent,
@@ -10,6 +12,11 @@ export function Carousel() {
       opts={{
         loop: true,
       }}
+      plugins={[
+        Autoplay({
+          delay: 6000,
+        }),
+      ]}
     >
       <CarouselContent className="h-[60vh]">
         <CarouselItem>
