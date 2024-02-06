@@ -50,7 +50,7 @@ export function PartnersItem({ data }: PartnersData) {
                 className="max-w-full"
               />
 
-              <div className="absolute z-50 h-full w-full bg-[rgba(255,255,255,0.5)] transition-all dark:bg-[rgba(0,0,0,0.6)] dark:hover:bg-transparent"></div>
+              <div className="absolute z-50 h-full w-full bg-[rgba(255,255,255,0.5)] transition-all hover:bg-transparent dark:bg-[rgba(0,0,0,0.6)]"></div>
             </a>
           </CarouselItem>
         ))}
