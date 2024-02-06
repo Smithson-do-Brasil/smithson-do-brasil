@@ -16,6 +16,17 @@ import { Separator } from './ui/separator'
 export function Header() {
   const [open, setOpen] = useState(false)
 
+  const navLinks = [
+    { title: 'Home', to: '/' },
+    { title: 'Sobre nós', to: '/about-us' },
+    { title: 'Nossos serviços', to: '/services' },
+    { title: 'Contato', to: '/contact' },
+  ]
+
+  function handleClose() {
+    setOpen(false)
+  }
+
   return (
     <>
       <header className="sticky top-0 z-50 hidden  bg-[rgba(255,255,255,0.5)] dark:bg-[rgba(0,0,0,0.5)] lg:block">
@@ -25,10 +36,11 @@ export function Header() {
           </Link>
 
           <nav className="flex items-center space-x-4 lg:space-x-6">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about-us">Sobre nós</NavLink>
-            <NavLink to="/services">Nossos serviços</NavLink>
-            <NavLink to="/contact">Contato</NavLink>
+            {navLinks.map((link, index) => (
+              <NavLink key={index} to={link.to}>
+                {link.title}
+              </NavLink>
+            ))}
           </nav>
 
           <div className="flex items-center">
@@ -65,34 +77,16 @@ export function Header() {
             <Separator className="w-full bg-zinc-950 dark:bg-zinc-50" />
 
             <nav className="flex flex-col space-y-4 p-4 lg:space-y-6">
-              <NavLink
-                to="/"
-                className="text-sm font-medium"
-                onClick={() => setOpen(false)}
-              >
-                Home
-              </NavLink>
-              <NavLink
-                to="/about-us"
-                className="text-sm font-medium"
-                onClick={() => setOpen(false)}
-              >
-                Sobre nós
-              </NavLink>
-              <NavLink
-                to="/services"
-                className="text-sm font-medium"
-                onClick={() => setOpen(false)}
-              >
-                Nossos serviços
-              </NavLink>
-              <NavLink
-                to="/contact"
-                className="text-sm font-medium"
-                onClick={() => setOpen(false)}
-              >
-                Contato
-              </NavLink>
+              {navLinks.map((link, index) => (
+                <NavLink
+                  key={index}
+                  to={link.to}
+                  className="text-sm font-medium"
+                  onClick={handleClose}
+                >
+                  {link.title}
+                </NavLink>
+              ))}
             </nav>
           </DrawerContent>
         </Drawer>
