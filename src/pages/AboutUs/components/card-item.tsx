@@ -1,4 +1,4 @@
-interface CardItemProps {
+export type CardItemProps = {
   number: string
   title: string
 }
