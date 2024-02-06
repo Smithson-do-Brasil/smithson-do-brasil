@@ -28,7 +28,7 @@ export function Home() {
         <section
           className="container flex flex-col items-center justify-between gap-6 py-8 lg:flex-row xl:h-screen xl:gap-20"
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="1500"
         >
           <div className="flex flex-col items-start gap-6">
             <h1 className="text-4xl font-medium text-foreground xl:text-6xl">
