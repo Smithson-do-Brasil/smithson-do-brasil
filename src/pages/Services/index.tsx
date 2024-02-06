@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
-import { ServicesItems } from './components/services-items'
+import { ServicesWrapper } from './components/services-wrapper'
 
 export function Services() {
   return (
@@ -20,7 +20,7 @@ export function Services() {
             className="block w-full lg:hidden"
           />
         </div>
-        <ServicesItems />
+        <ServicesWrapper />
       </div>
     </>
   )

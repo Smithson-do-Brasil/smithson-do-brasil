@@ -1,4 +1,4 @@
-export function ServicesItems() {
+export function ServicesWrapper() {
   return (
     <div className="container space-y-10 pb-16 lg:space-y-32">
       <h1 className="text-center text-4xl font-bold text-foreground lg:text-7xl">
