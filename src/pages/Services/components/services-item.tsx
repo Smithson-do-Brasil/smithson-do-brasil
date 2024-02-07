@@ -1,4 +1,5 @@
 import { icons } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
@@ -12,16 +13,22 @@ interface ServicesItemProps {
 export function ServicesItem({ icon, title, description }: ServicesItemProps) {
   const LucideIcon = icons[icon]
   return (
-    <Card className="flex flex-col items-center gap-2">
+    <Card
+      className="flex flex-col items-center justify-between gap-2"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <CardHeader>
         <LucideIcon size={64} />
       </CardHeader>
       <CardContent className="space-y-4 text-center">
-        <h1 className="text-2xl font-bold">{title}</h1>
-        <p className="text-lg text-muted-foreground">{description}</p>
+        <h1 className="text-3xl font-bold">{title}</h1>
+        <p className="text-xl text-muted-foreground">{description}</p>
       </CardContent>
       <CardFooter>
-        <Button>Saiba mais</Button>
+        <Link to="/services">
+          <Button className="text-base font-medium">Saiba mais</Button>
+        </Link>
       </CardFooter>
     </Card>
   )
