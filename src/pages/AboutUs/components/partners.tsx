@@ -63,7 +63,7 @@ export function Partners() {
       url: 'https://www.spoleto.com.br',
     },
     {
-      image: 'empresas-parceiras/viamia.png',
+      image: 'empresas-parceiras/viamia.svg',
       title: 'Via Mia',
       url: 'https://www.viamia.com.br',
     },
@@ -73,7 +73,7 @@ export function Partners() {
       url: 'https://www.vlmvimoveis.com',
     },
     {
-      image: 'empresas-parceiras/wizard.png',
+      image: 'empresas-parceiras/wizard.webp',
       title: 'Wizard',
       url: 'https://www.wizard.com.br',
     },
