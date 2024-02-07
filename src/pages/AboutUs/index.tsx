@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 
@@ -24,9 +25,11 @@ export function AboutUs() {
             da utilização de tecnologias avançadas.
           </p>
 
-          <Button className="w-max bg-[#4C6FF7] text-lg font-medium text-zinc-50 hover:bg-[#4C6FF7] hover:brightness-90">
-            Fale Conosco
-          </Button>
+          <Link to="/contact">
+            <Button className="w-max bg-[#4C6FF7] text-lg font-medium text-zinc-50 hover:bg-[#4C6FF7] hover:brightness-90">
+              Fale Conosco
+            </Button>
+          </Link>
         </div>
 
         <img src="about-us.jpg" alt="Image" className="lg:w-2/4" />
