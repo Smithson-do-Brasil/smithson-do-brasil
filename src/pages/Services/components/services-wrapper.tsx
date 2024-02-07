@@ -1,3 +1,5 @@
+import { ServicesItem } from './services-item'
+
 export function ServicesWrapper() {
   return (
     <div className="container space-y-10 pb-16 lg:space-y-32">
@@ -5,18 +7,25 @@ export function ServicesWrapper() {
         Nossos serviços
       </h1>
 
-      <div className="flex flex-col items-center gap-12 lg:flex-row">
-        <div className="space-y-4 lg:space-y-8">
-          <h1 className="text-2xl font-bold text-foreground dark:text-foreground lg:text-5xl">
-            Desenvolvimento de Software
-          </h1>
-          <p className="text-sm font-semibold dark:text-muted-foreground lg:text-xl">
-            Desenvolvemos soluções digitais de alto impacto com inteligência e
-            tecnologia para gigantes do mercado
-          </p>
-        </div>
-
-        <img src="developer.svg" alt="" className="w-full lg:w-2/4" />
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <ServicesItem
+          icon="Code"
+          title="Desenvolvimento Web"
+          description="Contamos com uma equipe qualificada e pronta para entregar projetos de
+          qualidade com o máximo de desempenho e qualidade."
+        />
+        <ServicesItem
+          icon="Code"
+          title="Desenvolvimento Web"
+          description="Contamos com uma equipe qualificada e pronta para entregar projetos de
+          qualidade com o máximo de desempenho e qualidade."
+        />
+        <ServicesItem
+          icon="Code"
+          title="Desenvolvimento Web"
+          description="Contamos com uma equipe qualificada e pronta para entregar projetos de
+          qualidade com o máximo de desempenho e qualidade."
+        />
       </div>
     </div>
   )
