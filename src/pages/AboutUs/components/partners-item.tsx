@@ -39,7 +39,7 @@ export function PartnersItem({ data }: PartnersData) {
             <a
               href={partner.url}
               target="_blank"
-              className="flex w-full items-center justify-center rounded-sm border-2 border-muted p-4 dark:bg-muted-foreground lg:p-8"
+              className="flex w-full items-center justify-center rounded-sm border-2 border-muted p-4 lg:p-8"
               rel="noreferrer"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -47,7 +47,7 @@ export function PartnersItem({ data }: PartnersData) {
               <img
                 src={partner.image}
                 alt={partner.title}
-                className="max-w-full transition-all duration-300 ease-in-out group-hover:scale-110 group-hover:brightness-125"
+                className="max-w-full transition-all duration-300 ease-in-out group-hover:scale-110"
               />
             </a>
           </CarouselItem>

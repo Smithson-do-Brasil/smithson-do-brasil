@@ -13,14 +13,9 @@ export function Partners() {
       url: 'https://www.lisclinica.com.br',
     },
     {
-      image: 'empresas-parceiras/convencao.webp',
-      title: 'Refrigerantes Convenção',
-      url: 'https://www.refrigerantesconvencao.com.br',
-    },
-    {
-      image: 'empresas-parceiras/luiz-mendes.webp',
-      title: 'Luiz Mendes Advocacia e Assessoria Jurídica',
-      url: 'https://luizmendesadv.com.br/',
+      image: 'empresas-parceiras/gendai.png',
+      title: 'Gendai',
+      url: 'https://www.gendai.com.br/home',
     },
     {
       image: 'empresas-parceiras/golden-cross.png',
@@ -48,6 +43,16 @@ export function Partners() {
       url: 'https://www.lebonton.com.br/tabs/cardapioapp',
     },
     {
+      image: 'empresas-parceiras/luiz-mendes.png',
+      title: 'Luiz Mendes Advocacia e Assessoria Jurídica',
+      url: 'https://luizmendesadv.com.br/',
+    },
+    {
+      image: 'empresas-parceiras/micral.png',
+      title: 'Wizard',
+      url: 'https://www.wizard.com.br',
+    },
+    {
       image: 'empresas-parceiras/porto-real.png',
       title: 'Hotel Porto Real Resort',
       url: 'https://hotelportoreal.com.br',
@@ -58,12 +63,17 @@ export function Partners() {
       url: 'https://www.recomservice.com.br',
     },
     {
+      image: 'empresas-parceiras/sampaio-metalis.png',
+      title: 'Recom Service',
+      url: 'https://www.recomservice.com.br',
+    },
+    {
       image: 'empresas-parceiras/spoleto.png',
       title: 'Spoleto',
       url: 'https://www.spoleto.com.br',
     },
     {
-      image: 'empresas-parceiras/viamia.svg',
+      image: 'empresas-parceiras/viamia.png',
       title: 'Via Mia',
       url: 'https://www.viamia.com.br',
     },
@@ -73,7 +83,7 @@ export function Partners() {
       url: 'https://www.vlmvimoveis.com',
     },
     {
-      image: 'empresas-parceiras/wizard.webp',
+      image: 'empresas-parceiras/wizard.png',
       title: 'Wizard',
       url: 'https://www.wizard.com.br',
     },
