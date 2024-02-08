@@ -50,7 +50,7 @@ export function Partners() {
     {
       image: 'empresas-parceiras/micral.png',
       title: 'Wizard',
-      url: 'https://www.wizard.com.br',
+      url: 'https://www.micral.com.br',
     },
     {
       image: 'empresas-parceiras/porto-real.png',
@@ -65,7 +65,7 @@ export function Partners() {
     {
       image: 'empresas-parceiras/sampaio-metalis.png',
       title: 'Recom Service',
-      url: 'https://www.recomservice.com.br',
+      url: 'https://sampaiometalis.com.br',
     },
     {
       image: 'empresas-parceiras/spoleto.png',
@@ -91,7 +91,7 @@ export function Partners() {
 
   return (
     <section className="container my-20 flex flex-col items-center justify-center gap-8 lg:gap-20">
-      <h1 className="text-2xl lg:text-4xl">
+      <h1 className="text-center text-2xl lg:text-4xl">
         Empresas que confiam no nosso trabalho
       </h1>
 

@@ -4,6 +4,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
 } from '@/components/ui/carousel'
 
 export type Partners = {
@@ -53,6 +55,8 @@ export function PartnersItem({ data }: PartnersData) {
           </CarouselItem>
         ))}
       </CarouselContent>
+      <CarouselPrevious className="-left-6" />
+      <CarouselNext className="-right-6" />
     </Carousel>
   )
 }
