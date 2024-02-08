@@ -27,7 +27,7 @@ export function PartnersItem({ data }: PartnersData) {
       }}
       plugins={[
         Autoplay({
-          delay: 2000,
+          delay: 4000,
         }),
       ]}
       className="w-full"
@@ -36,12 +36,12 @@ export function PartnersItem({ data }: PartnersData) {
         {data.map((partner, index) => (
           <CarouselItem
             key={index}
-            className="group flex justify-center ease-in-out md:basis-1/2 lg:basis-1/3"
+            className="group flex basis-1/2 justify-center ease-in-out md:basis-1/3 lg:basis-1/4"
           >
             <a
               href={partner.url}
               target="_blank"
-              className="flex w-full items-center justify-center rounded-sm border-2 border-muted p-4 lg:p-8"
+              className="flex w-full items-center justify-center rounded-sm border-2 border-muted-foreground p-4 lg:p-8"
               rel="noreferrer"
               data-aos="fade-up"
               data-aos-duration="1000"
@@ -49,7 +49,7 @@ export function PartnersItem({ data }: PartnersData) {
               <img
                 src={partner.image}
                 alt={partner.title}
-                className="max-w-full transition-all duration-300 ease-in-out group-hover:scale-110"
+                className="max-w-full transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:brightness-125"
               />
             </a>
           </CarouselItem>

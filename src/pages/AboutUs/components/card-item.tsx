@@ -7,7 +7,7 @@ export type CardItemProps = {
 export function CardItem({ number, title, aosDirection }: CardItemProps) {
   return (
     <div
-      className="flex flex-col items-center rounded-sm border border-zinc-600 p-8"
+      className="flex flex-col items-center rounded-sm border border-muted-foreground p-8"
       data-aos={aosDirection}
       data-aos-duration="1000"
     >

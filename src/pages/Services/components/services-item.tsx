@@ -27,7 +27,9 @@ export function ServicesItem({ icon, title, description }: ServicesItemProps) {
       </CardContent>
       <CardFooter>
         <Link to="/services">
-          <Button className="text-base font-medium">Saiba mais</Button>
+          <Button className="bg-[#4C6FF7] text-base font-medium text-zinc-50">
+            Saiba mais
+          </Button>
         </Link>
       </CardFooter>
     </Card>
