@@ -43,8 +43,6 @@ export function PartnersItem({ data }: PartnersData) {
               target="_blank"
               className="flex w-full items-center justify-center rounded-sm border-2 border-muted-foreground p-4 lg:p-8"
               rel="noreferrer"
-              data-aos="fade-up"
-              data-aos-duration="1000"
             >
               <img
                 src={partner.image}

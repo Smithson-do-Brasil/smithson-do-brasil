@@ -1,7 +1,3 @@
-import 'aos/dist/aos.css'
-
-import AOS from 'aos'
-import { useEffect } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 
@@ -11,10 +7,6 @@ import { Carousel } from './components/carousel'
 import { Dna } from './components/dna'
 
 export function Home() {
-  useEffect(() => {
-    AOS.init()
-  }, [])
-
   return (
     <>
       <Helmet title="Home" />
@@ -25,11 +17,7 @@ export function Home() {
           <Dna />
         </div>
 
-        <section
-          className="container flex flex-col items-center justify-between gap-6 py-8 lg:flex-row xl:h-screen xl:gap-20"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
+        <section className="container flex flex-col items-center justify-between gap-6 py-8 lg:flex-row xl:h-screen xl:gap-20">
           <div className="flex flex-col items-start gap-6">
             <h1 className="text-4xl font-medium text-foreground xl:text-6xl">
               Desbloqueie o Potencial do Seu Negócio com Soluções Digitais

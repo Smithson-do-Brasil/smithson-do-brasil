@@ -13,11 +13,7 @@ interface ServicesItemProps {
 export function ServicesItem({ icon, title, description }: ServicesItemProps) {
   const LucideIcon = icons[icon]
   return (
-    <Card
-      className="flex flex-col items-center justify-between gap-2"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-    >
+    <Card className="flex flex-col items-center justify-between gap-2">
       <CardHeader>
         <LucideIcon size={64} />
       </CardHeader>

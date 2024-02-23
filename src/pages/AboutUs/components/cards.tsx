@@ -12,12 +12,7 @@ export function Cards() {
     <div className="w-full">
       <section className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
         {cards.map((card, index) => (
-          <CardItem
-            key={index}
-            number={card.number}
-            title={card.title}
-            aosDirection={index <= 1 ? 'fade-right' : 'fade-left'}
-          />
+          <CardItem key={index} number={card.number} title={card.title} />
         ))}
       </section>
     </div>
