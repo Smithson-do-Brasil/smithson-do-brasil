@@ -11,8 +11,8 @@ export function Dna() {
 
       <div className="grid w-full lg:grid-cols-3">
         <DnaItem icon="HeartHandshake" title="Entrega de Valor" />
-        <DnaItem icon="CodeSquare" title="Pluralidade Técnica" />
-        <DnaItem icon="Heart" title="Paixão" />
+        <DnaItem icon="BarChart4" title="Evolução do Negócio" />
+        <DnaItem icon="Wrench" title="Excelência Operacional" />
       </div>
     </div>
   )

@@ -23,23 +23,22 @@ export function Carousel() {
           <div className="relative h-full">
             <div className="absolute h-full w-full bg-zinc-950 opacity-70"></div>
             <img
-              src="banner.png"
+              src="cyber.jpg"
               alt="Banner"
               className="hidden h-full w-full object-cover md:block"
             />
             <img
-              src="banner-mobile.png"
+              src="cyber-mobile.jpg"
               alt="Banner"
               className="h-full w-full object-cover lg:hidden"
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">
               <h1 className="text-2xl font-bold text-zinc-50 lg:text-5xl">
-                Há mais de 30 anos acelerando negócios
+                O futuro da tecnologia é agora.
               </h1>
               <p className="text-sm font-semibold text-muted-foreground lg:text-xl">
-                Soluções digitais de alto impacto com inteligência e tecnologia
-                para gigantes do mercado
+                Soluções inovadoras e personalizadas para as suas necessidades.
               </p>
             </div>
           </div>
@@ -48,23 +47,22 @@ export function Carousel() {
           <div className="relative h-full">
             <div className="absolute h-full w-full bg-zinc-950 opacity-70"></div>
             <img
-              src="banner.png"
+              src="motherboard.jpg"
               alt="Banner"
               className="hidden h-full w-full object-cover md:block"
             />
             <img
-              src="banner-mobile.png"
+              src="motherboard-mobile.jpg"
               alt="Banner"
               className="h-full w-full object-cover lg:hidden"
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">
               <h1 className="text-2xl font-bold text-zinc-50 lg:text-5xl">
-                Há mais de 30 anos acelerando negócios
+                Transforme a sua forma de trabalhar com a nossa expertise em TI.
               </h1>
               <p className="text-sm font-semibold text-muted-foreground lg:text-xl">
-                Soluções digitais de alto impacto com inteligência e tecnologia
-                para gigantes do mercado
+                Somos a sua parceira ideal para o sucesso na era digital.
               </p>
             </div>
           </div>
@@ -73,23 +71,23 @@ export function Carousel() {
           <div className="relative h-full">
             <div className="absolute h-full w-full bg-zinc-950 opacity-70"></div>
             <img
-              src="banner.png"
+              src="code.jpg"
               alt="Banner"
               className="hidden h-full w-full object-cover md:block"
             />
             <img
-              src="banner-mobile.png"
+              src="code-mobile.jpg"
               alt="Banner"
               className="h-full w-full object-cover lg:hidden"
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">
               <h1 className="text-2xl font-bold text-zinc-50 lg:text-5xl">
-                Há mais de 30 anos acelerando negócios
+                Tecnologia que faz a diferença: Soluções em TI que impulsionam o
+                seu negócio.
               </h1>
               <p className="font-semibold text-muted-foreground sm:text-sm lg:text-xl">
-                Soluções digitais de alto impacto com inteligência e tecnologia
-                para gigantes do mercado
+                Redução de custos e otimização de recursos.
               </p>
             </div>
           </div>
