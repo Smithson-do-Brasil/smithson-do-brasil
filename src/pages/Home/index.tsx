@@ -32,16 +32,19 @@ export function Home() {
         >
           <div className="flex flex-col items-start gap-6">
             <h1 className="text-4xl font-medium text-foreground xl:text-6xl">
-              Materializamos estratégias em soluções digitais
+              Desbloqueie o Potencial do Seu Negócio com Soluções Digitais
+              Personalizadas
             </h1>
 
             <p className="text-xl text-muted-foreground xl:text-2xl">
-              Na era da Transformação Digital, o nosso propósito é acelerar os
-              negócios dos nossos clientes com inteligência e tecnologia. Aqui,
-              toda jornada de transformação é tratada como única.
+              A Smithson do Brasil acredita que cada negócio é único. Por isso,
+              oferecemos soluções digitais sob medida que se adaptam às suas
+              necessidades específicas. Seja para aumentar a eficiência
+              operacional, expandir seu alcance no mercado ou impulsionar suas
+              vendas, temos a solução ideal para você.
             </p>
 
-            <Link to="/">
+            <Link to="/services">
               <Button className="bg-[#4C6FF7] text-lg text-zinc-50 hover:bg-[#4C6FF7] hover:brightness-75">
                 Saiba mais
               </Button>
