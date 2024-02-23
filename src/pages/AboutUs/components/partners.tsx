@@ -90,7 +90,7 @@ export function Partners() {
   ]
 
   return (
-    <section className="container my-20 flex flex-col items-center justify-center gap-8 lg:gap-20">
+    <section className="my-20 flex flex-col items-center justify-center gap-8 lg:gap-20">
       <h1 className="text-center text-2xl lg:text-4xl">
         Empresas que confiam no nosso trabalho
       </h1>

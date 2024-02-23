@@ -1,16 +1,14 @@
 import { Helmet } from 'react-helmet-async'
-import { Link } from 'react-router-dom'
-
-import { Button } from '@/components/ui/button'
 
 import { Cards } from './components/cards'
 import { Partners } from './components/partners'
+import { Timeline } from './components/timeline'
 
 export function AboutUs() {
   return (
-    <div className="mb-12">
+    <div className="container mb-12 flex flex-col gap-8 pt-8">
       <Helmet title="Sobre nós" />
-      <div className="container flex h-screen flex-col items-center justify-center gap-8 lg:flex-row">
+      {/* <div className="container flex h-screen flex-col items-center justify-center gap-8 lg:flex-row">
         <div className="flex flex-col gap-7 text-base font-medium">
           <h1 className="text-4xl font-bold uppercase text-[#4C6FF7] lg:text-6xl">
             Líderes em soluções de TI
@@ -33,7 +31,9 @@ export function AboutUs() {
         </div>
 
         <img src="about-us.jpg" alt="Image" className="lg:w-2/4" />
-      </div>
+      </div> */}
+
+      <Timeline />
 
       <Cards />
 

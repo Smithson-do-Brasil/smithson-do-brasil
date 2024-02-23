@@ -9,7 +9,7 @@ export function Cards() {
   ]
 
   return (
-    <div className="container w-full">
+    <div className="w-full">
       <section className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
         {cards.map((card, index) => (
           <CardItem
