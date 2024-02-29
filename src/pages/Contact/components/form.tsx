@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
@@ -28,11 +29,14 @@ export function Form() {
     resolver: zodResolver(contactFormSchema),
   })
 
-  async function handleSignUp(data: ContactFormSchema) {
+  async function handleContactUs(data: ContactFormSchema) {
     try {
-      console.log(data)
-
-      await new Promise((resolve) => setTimeout(resolve, 2000))
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        data,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+      )
 
       toast.success('Mensagem enviada com sucesso.', {
         duration: 5000,
@@ -40,14 +44,16 @@ export function Form() {
       })
 
       reset()
-    } catch {
-      toast.error('Erro ao cadastrar restaurante.')
+    } catch (error) {
+      console.log(error)
+
+      toast.error('Erro ao enviar a mensagem.')
     }
   }
 
   return (
     <form
-      onSubmit={handleSubmit(handleSignUp)}
+      onSubmit={handleSubmit(handleContactUs)}
       className="w-full space-y-4 rounded-lg bg-zinc-200 p-8 dark:bg-zinc-800 lg:w-2/4"
     >
       <Input

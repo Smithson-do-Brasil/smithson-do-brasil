@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly VITE_PRISMIC_API_ENDPOINT: string
-  readonly VITE_PRISMIC_ACCESS_TOKEN: string
-  readonly VITE_PRISMIC_REPOSITORY_NAME: string
+  readonly VITE_EMAILJS_SERVICE_ID: string
+  readonly VITE_EMAILJS_TEMPLATE_ID: string
+  readonly VITE_EMAILJS_PUBLIC_KEY: string
 }
