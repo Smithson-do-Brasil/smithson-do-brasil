@@ -29,24 +29,9 @@ export function ServicesWrapper() {
           dos seus dispositivos."
         />
         <ServicesItem
-          icon="Code"
-          title="Desenvolvimento Web"
-          description="Contamos com uma equipe qualificada e pronta para entregar projetos de
-          qualidade com o máximo de desempenho e qualidade."
-        />
-        <ServicesItem
-          icon="Cctv"
-          title="CFTV"
-          description="Serviço realizado por profissionais capacitados, contando com a melhor
-          tecnologia e segurança. Instalação em locais estratégicos para garantir a segurança
-          do local."
-        />
-        <ServicesItem
-          icon="PcCase"
-          title="Reparo em Hardware"
-          description="Especialistas em hardware prontos para reparar seus computadores computadores
-          pessoais e empresariais. Soluções rápidas e confiáveis para garantir o funcionamento ideal
-          dos seus dispositivos."
+          icon="Microscope"
+          title="Microsoft 365"
+          description="Contamos com soluções de consultoria e implementação de Microsoft 365 para sua empresa (Aplicações Empresariais, Plataformas de Comunicação, Infraestrutura)."
         />
       </div>
     </div>

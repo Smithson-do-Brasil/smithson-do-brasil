@@ -10,6 +10,7 @@ interface ServicesItemProps {
 
 export function ServicesItem({ icon, title, description }: ServicesItemProps) {
   const LucideIcon = icons[icon]
+
   return (
     <Card className="flex flex-col items-center justify-between gap-2">
       <CardHeader>
