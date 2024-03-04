@@ -9,12 +9,7 @@ interface ServicesItemProps {
   description: string
 }
 
-export function ServicesItem({
-  library,
-  icon,
-  title,
-  description,
-}: ServicesItemProps) {
+export function ServicesItem({ icon, title, description }: ServicesItemProps) {
   const LucideIcon = icons[icon]
 
   return (
