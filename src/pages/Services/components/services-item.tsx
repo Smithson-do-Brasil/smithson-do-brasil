@@ -3,7 +3,6 @@ import { icons } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 
 interface ServicesItemProps {
-  library: 'lucide' | 'simple-icons'
   icon: keyof typeof icons
   title: string
   description: string

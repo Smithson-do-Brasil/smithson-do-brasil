@@ -9,32 +9,34 @@ export function ServicesWrapper() {
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <ServicesItem
-          library="lucide"
           icon="Code"
           title="Desenvolvimento de Sites"
-          description="Contamos com uma equipe qualificada e pronta para entregar projetos de qualidade com o máximo de desempenho e qualidade. Possuímos em nosso portfólio sites institucionais, e-commerce, blogs e landing pages."
+          description="Equipe qualificada pronta para entregar projetos de qualidade, incluindo sites institucionais, e-commerce, blogs e landing pages."
         />
         <ServicesItem
-          library="lucide"
           icon="Cctv"
           title="CFTV"
-          description="Serviço realizado por profissionais capacitados, contando com a melhor
-          tecnologia e segurança. Instalação em locais estratégicos para garantir a segurança
-          do local."
+          description="Serviço realizado por profissionais capacitados, com tecnologia e segurança de ponta. Instalação estratégica para garantir a segurança do local."
         />
         <ServicesItem
-          library="lucide"
           icon="PcCase"
           title="Reparo em Hardware"
-          description="Especialistas em hardware prontos para reparar seus computadores computadores
-          pessoais e empresariais. Soluções rápidas e confiáveis para garantir o funcionamento ideal
-          dos seus dispositivos."
+          description="Especialistas prontos para reparar computadores pessoais e empresariais. Soluções rápidas e confiáveis para o funcionamento ideal dos dispositivos."
         />
         <ServicesItem
-          library="simple-icons"
-          icon="Microscope"
+          icon="Grid2x2"
           title="Microsoft 365"
-          description="Contamos com soluções de consultoria e implementação de Microsoft 365 para sua empresa (Aplicações Empresariais, Plataformas de Comunicação, Infraestrutura)."
+          description="Soluções de consultoria e implementação de Microsoft 365 para sua empresa, incluindo Aplicações Empresariais, Plataformas de Comunicação e Infraestrutura."
+        />
+        <ServicesItem
+          icon="Megaphone"
+          title="Tráfego Pago"
+          description="Maximize a visibilidade online da sua empresa com o tráfego pago. Direcionamos o público certo para o seu site, aumentando a exposição e impulsionando as conversões."
+        />
+        <ServicesItem
+          icon="ShoppingCart"
+          title="Venda de Computadores"
+          description="Ampla seleção de computadores de qualidade, incluindo modelos empresariais e pessoais, para impulsionar a produtividade e segurança do seu negócio."
         />
       </div>
     </div>
