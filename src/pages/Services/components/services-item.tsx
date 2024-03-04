@@ -3,12 +3,18 @@ import { icons } from 'lucide-react'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 
 interface ServicesItemProps {
+  library: 'lucide' | 'simple-icons'
   icon: keyof typeof icons
   title: string
   description: string
 }
 
-export function ServicesItem({ icon, title, description }: ServicesItemProps) {
+export function ServicesItem({
+  library,
+  icon,
+  title,
+  description,
+}: ServicesItemProps) {
   const LucideIcon = icons[icon]
 
   return (
