@@ -6,17 +6,17 @@ export function Services() {
   return (
     <>
       <Helmet title="Nossos serviços" />
-      <div className="space-y-10 lg:space-y-28">
+      <section className="space-y-10 lg:space-y-28">
         <div className="relative">
           <div className="absolute h-full w-full bg-zinc-950 opacity-40"></div>
           <img
             src="image-service.png"
-            alt="Image"
+            alt="Banner"
             className="hidden w-full lg:block"
           />
           <img
             src="image-service-mobile.png"
-            alt="Image"
+            alt="Banner"
             className="block w-full lg:hidden"
           />
 
@@ -25,7 +25,7 @@ export function Services() {
           </h1>
         </div>
         <ServicesWrapper />
-      </div>
+      </section>
     </>
   )
 }

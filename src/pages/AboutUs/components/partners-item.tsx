@@ -44,11 +44,14 @@ export function PartnersItem({ data }: PartnersData) {
               className="flex w-full items-center justify-center rounded-sm border-2 border-muted-foreground p-4 lg:p-8"
               rel="noreferrer"
             >
-              <img
-                src={partner.image}
-                alt={partner.title}
-                className="max-w-full transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:brightness-125"
-              />
+              <figure>
+                <img
+                  src={partner.image}
+                  alt={partner.title}
+                  className="max-w-full transition-all duration-300 ease-in-out group-hover:scale-105 group-hover:brightness-125"
+                />
+                <figcaption className="hidden">{partner.title}</figcaption>
+              </figure>
             </a>
           </CarouselItem>
         ))}

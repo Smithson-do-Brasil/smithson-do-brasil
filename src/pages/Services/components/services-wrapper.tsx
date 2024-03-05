@@ -2,7 +2,7 @@ import { ServicesItem } from './services-item'
 
 export function ServicesWrapper() {
   return (
-    <div className="container space-y-10 pb-16 lg:space-y-20">
+    <section className="container space-y-10 pb-16 lg:space-y-20">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         <ServicesItem
           icon="Code"
@@ -35,6 +35,6 @@ export function ServicesWrapper() {
           description="Ampla seleção de computadores de qualidade, incluindo modelos empresariais e pessoais, para impulsionar a produtividade e segurança do seu negócio."
         />
       </div>
-    </div>
+    </section>
   )
 }

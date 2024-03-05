@@ -9,12 +9,14 @@ export function Cards() {
   ]
 
   return (
-    <div className="w-full">
-      <section className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
-        {cards.map((card, index) => (
-          <CardItem key={index} number={card.number} title={card.title} />
-        ))}
-      </section>
+    <div
+      role="region"
+      aria-label="Cartões sobre a empresa"
+      className="grid w-full grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4"
+    >
+      {cards.map((card, index) => (
+        <CardItem key={index} number={card.number} title={card.title} />
+      ))}
     </div>
   )
 }

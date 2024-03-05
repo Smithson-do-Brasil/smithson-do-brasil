@@ -34,9 +34,9 @@ export function Carousel() {
             />
 
             <div className="absolute left-2/4 top-2/4 flex -translate-x-2/4 -translate-y-2/4 flex-col items-center gap-6 text-center">
-              <h1 className="text-2xl font-bold text-zinc-50 lg:text-5xl">
+              <h2 className="text-2xl font-bold text-zinc-50 lg:text-5xl">
                 O futuro da tecnologia é agora.
-              </h1>
+              </h2>
               <p className="text-sm font-semibold text-muted-foreground lg:text-xl">
                 Soluções inovadoras e personalizadas para as suas necessidades.
               </p>

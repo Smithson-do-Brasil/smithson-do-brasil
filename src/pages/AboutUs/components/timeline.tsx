@@ -2,11 +2,14 @@ import { TimelineItem } from './timeline-item'
 
 export function Timeline() {
   return (
-    <div className="space-y-8">
-      <h1 className="text-center text-5xl font-medium text-foreground">
+    <section className="space-y-8">
+      <h2 className="text-center text-5xl font-medium text-foreground">
         Nossa jornada
-      </h1>
-      <ol className="relative mx-4 border-s border-gray-200 dark:border-gray-700 lg:mx-0">
+      </h2>
+      <ol
+        className="relative mx-4 border-s border-gray-200 dark:border-gray-700 lg:mx-0"
+        role="list"
+      >
         <TimelineItem
           year={1994}
           title="Início da Jornada"
@@ -15,8 +18,7 @@ export function Timeline() {
         <TimelineItem
           year={1997}
           title="Expansão e Consolidação"
-          description="Foi criado a linha de microcomputadores SMT Computer com o que há de
-        melhor em periféricos."
+          description="Foi criado a linha de microcomputadores SMT Computer com o que há de melhor em periféricos."
         />
         <TimelineItem
           year={2002}
@@ -24,6 +26,6 @@ export function Timeline() {
           description="Alcançamos o título de Integradora Microsoft OEM."
         />
       </ol>
-    </div>
+    </section>
   )
 }

@@ -21,7 +21,7 @@ export function Contact() {
           <Form />
         </div>
 
-        <section className="space-y-8 rounded-lg bg-zinc-100 p-8">
+        <address className="space-y-8 rounded-lg bg-zinc-100 p-8 not-italic">
           <h2 className="text-2xl font-bold text-zinc-950">
             Outras formas de contato
           </h2>
@@ -32,12 +32,12 @@ export function Contact() {
           </p>
 
           <section className="flex flex-col gap-2">
-            <div className="flex gap-2">
+            <a className="flex gap-2">
               <MapPin size={24} className="fill-muted" />
               <p className="text-zinc-950">
                 Avenida dos Mananciais, 1720 - Taquara, RJ
               </p>
-            </div>
+            </a>
             <a
               href="mailto:chamados@smithson.com.br?subject=Orçamento&body=Gostaria de entrar em contato"
               className="flex gap-2"
@@ -65,7 +65,7 @@ export function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-        </section>
+        </address>
       </div>
     </>
   )

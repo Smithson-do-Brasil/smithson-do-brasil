@@ -11,11 +11,11 @@ export function Home() {
     <>
       <Helmet title="Home" />
       <div className="flex flex-col items-center justify-center gap-4 lg:gap-8">
-        <div>
+        <section>
           <Carousel />
 
           <Dna />
-        </div>
+        </section>
 
         <section className="container flex flex-col items-center justify-between gap-6 py-8 lg:flex-row xl:h-screen xl:gap-20">
           <div className="flex flex-col items-start gap-6">
@@ -39,13 +39,13 @@ export function Home() {
             </Link>
           </div>
 
-          <img src="image.svg" alt="" className="w-full" />
+          <img src="image.svg" alt="Banner" className="w-full" />
         </section>
       </div>
       <div className="flex flex-col items-center gap-8 bg-[#4C6FF7] p-16">
-        <h1 className="text-center text-2xl font-medium text-zinc-50 lg:text-4xl">
+        <h2 className="text-center text-2xl font-medium text-zinc-50 lg:text-4xl">
           Acelere seu negócio hoje
-        </h1>
+        </h2>
 
         <Link to="/contact">
           <Button className="bg-zinc-50 text-lg text-zinc-950 hover:bg-zinc-50 hover:brightness-90 dark:bg-zinc-950 dark:text-zinc-50 lg:text-xl">

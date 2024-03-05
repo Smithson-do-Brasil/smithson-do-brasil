@@ -17,7 +17,7 @@ export function ServicesItem({ icon, title, description }: ServicesItemProps) {
         <LucideIcon size={64} />
       </CardHeader>
       <CardContent className="space-y-4 text-center">
-        <h1 className="text-3xl font-bold">{title}</h1>
+        <h3 className="text-3xl font-bold">{title}</h3>
         <p className="text-xl text-muted-foreground">{description}</p>
       </CardContent>
     </Card>
