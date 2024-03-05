@@ -54,7 +54,7 @@ export function Form() {
   return (
     <form
       onSubmit={handleSubmit(handleContactUs)}
-      className="w-full space-y-4 rounded-lg bg-transparent p-8 dark:bg-zinc-800 lg:w-2/4"
+      className="w-full space-y-4 rounded-lg bg-transparent"
     >
       <Input
         id="firstName"
