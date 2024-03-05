@@ -18,9 +18,9 @@ export function Header() {
 
   const navLinks = [
     { title: 'Home', to: '/' },
-    { title: 'Sobre nós', to: '/about-us' },
-    { title: 'Nossos serviços', to: '/services' },
-    { title: 'Contato', to: '/contact' },
+    { title: 'Sobre nós', to: '/quem-somos' },
+    { title: 'Nossos serviços', to: '/servicos' },
+    { title: 'Contato', to: '/contato' },
   ]
 
   function handleClose() {

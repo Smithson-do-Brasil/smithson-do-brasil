@@ -32,7 +32,7 @@ export function Home() {
               vendas, temos a solução ideal para você.
             </p>
 
-            <Link to="/services">
+            <Link to="/servicos">
               <Button className="bg-[#4C6FF7] text-lg text-zinc-50 hover:bg-[#4C6FF7] hover:brightness-75">
                 Saiba mais
               </Button>
@@ -47,7 +47,7 @@ export function Home() {
           Acelere seu negócio hoje
         </h2>
 
-        <Link to="/contact">
+        <Link to="/contato">
           <Button className="bg-zinc-50 text-lg text-zinc-950 hover:bg-zinc-50 hover:brightness-90 dark:bg-zinc-950 dark:text-zinc-50 lg:text-xl">
             Entre em contato
           </Button>
