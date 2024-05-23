@@ -1,8 +1,7 @@
 import { ArrowRightIcon } from 'lucide-react'
 
+import { Form } from '@/components/form'
 import { Badge } from '@/components/ui/badge'
-
-import { Form } from './form'
 
 export function Introduction() {
   return (

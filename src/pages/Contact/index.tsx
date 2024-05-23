@@ -1,7 +1,7 @@
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 
-import { Form } from './components/form'
+import { Form } from '@/components/form'
 
 export function Contact() {
   return (
