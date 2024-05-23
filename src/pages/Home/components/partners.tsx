@@ -1,3 +1,5 @@
+import { Badge } from '@/components/ui/badge'
+
 import { Partners as PartnersData, PartnersItem } from './partners-item'
 
 export function Partners() {
@@ -96,6 +98,10 @@ export function Partners() {
       className="my-20 flex flex-col items-center justify-center gap-8 lg:gap-20"
     >
       <div className="container space-y-8 text-center">
+        <Badge className="border-2 border-[#2364AA] bg-zinc-50 px-5 py-2 text-2xl font-medium text-[#2364AA] hover:bg-zinc-50">
+          Nossos parceiros
+        </Badge>
+
         <h2 className="text-center text-3xl font-bold lg:text-5xl">
           Empresas que confiam no nosso trabalho
         </h2>
@@ -103,7 +109,7 @@ export function Partners() {
         <p className="text-2xl font-medium">
           Diga adeus às complexidades do passado e desbloqueie um caminho mais
           prático para o sucesso de sua operação. Dê boas vindas à{' '}
-          <strong className="text-[#1D2C7B]">
+          <strong className="text-[#2364AA]">
             era da simplicidade e eficiência.
           </strong>
         </p>
