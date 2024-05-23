@@ -95,7 +95,7 @@ export function Partners() {
     <section
       role="region"
       aria-label="Empresas que confiam no nosso trabalho"
-      className="my-20 flex flex-col items-center justify-center gap-8 lg:gap-20"
+      className="flex flex-col items-center justify-center gap-8 lg:gap-20"
     >
       <div className="container space-y-8 text-center">
         <Badge className="border-2 border-[#2364AA] bg-muted px-5 py-2 text-2xl font-medium text-[#2364AA] hover:bg-muted">
