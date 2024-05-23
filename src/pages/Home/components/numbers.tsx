@@ -23,17 +23,11 @@ export function Numbers() {
         </p>
       </div>
 
-      <div className="flex items-center gap-20">
+      <div className="flex flex-col items-center gap-20 lg:flex-row">
         <NumbersItem number={30} title="Anos de Experiência" />
-        <Separator
-          orientation="vertical"
-          className="h-12 bg-muted-foreground"
-        />
+        <Separator className=" bg-muted-foreground lg:h-12 lg:w-[1px]" />
         <NumbersItem number={3000} title="Clientes" />
-        <Separator
-          orientation="vertical"
-          className="h-12 bg-muted-foreground"
-        />
+        <Separator className="bg-muted-foreground lg:h-12 lg:w-[1px]" />
         <NumbersItem number={20} title="Soluções e Serviços" />
       </div>
     </section>
