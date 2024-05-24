@@ -14,7 +14,7 @@ export function Dna() {
           :-)
         </h2>
 
-        <p className="text-2xl font-medium">
+        <p className="text-lg font-medium lg:text-2xl">
           Diga adeus às complexidades do passado e desbloqueie um caminho mais
           prático para o sucesso de sua operação. Dê boas vindas à{' '}
           <strong className="text-[#2364AA]">

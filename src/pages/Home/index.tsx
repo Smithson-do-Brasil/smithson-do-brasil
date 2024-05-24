@@ -11,7 +11,7 @@ export function Home() {
     <>
       <Helmet title="Home" />
 
-      <div className="space-y-24">
+      <div className="space-y-24 pb-12">
         <Introduction />
         <Partners />
         <Numbers />
