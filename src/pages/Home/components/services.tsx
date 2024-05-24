@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { Button } from '@/components/ui/button'
 
 import { Accordion } from './accordion'
@@ -77,9 +79,11 @@ export function Services() {
           />
         </div>
 
-        <Button className="rounded-3xl bg-[#2364AA] p-4 text-base font-medium hover:bg-[#3a75b4] lg:text-lg">
-          Conheça nossos serviços
-        </Button>
+        <Link to="/servicos">
+          <Button className="rounded-3xl bg-[#2364AA] p-4 text-base font-medium hover:bg-[#3a75b4] lg:text-lg">
+            Conheça nossos serviços
+          </Button>
+        </Link>
       </div>
     </section>
   )
