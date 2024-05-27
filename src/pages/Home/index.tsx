@@ -4,6 +4,7 @@ import { Dna } from './components/dna'
 import { Introduction } from './components/introduction'
 import { Numbers } from './components/numbers'
 import { Partners } from './components/partners'
+import { Review } from './components/review'
 import { Services } from './components/services'
 
 export function Home() {
@@ -17,6 +18,7 @@ export function Home() {
         <Numbers />
         <Dna />
         <Services />
+        <Review />
       </div>
     </>
   )
