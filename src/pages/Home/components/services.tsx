@@ -80,7 +80,7 @@ export function Services() {
         </div>
 
         <Link to="/servicos">
-          <Button className="rounded-3xl bg-[#2364AA] p-4 text-base font-medium hover:bg-[#3a75b4] lg:text-lg">
+          <Button className="rounded-3xl bg-[#2364AA] p-4 text-base font-medium text-zinc-50 hover:bg-[#3a75b4] lg:text-lg">
             Conheça nossos serviços
           </Button>
         </Link>
