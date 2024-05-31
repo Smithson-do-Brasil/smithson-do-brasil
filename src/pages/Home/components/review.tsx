@@ -21,7 +21,7 @@ export function Review() {
             delay: 4000,
           }),
         ]}
-        className="w-full"
+        className="mx-auto w-[90%] lg:w-full"
       >
         <CarouselContent className="-mx-6">
           <ReviewItem
