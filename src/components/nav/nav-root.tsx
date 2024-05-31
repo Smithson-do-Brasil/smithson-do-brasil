@@ -1,11 +1,14 @@
-import { ReactNode } from 'react'
+import { ComponentProps, ReactNode } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-export interface NavRootProps {
+export type NavRootProps = ComponentProps<'nav'> & {
   children: ReactNode
 }
 
-export function NavRoot({ children }: NavRootProps) {
+export function NavRoot({ children, ...props }: NavRootProps) {
   return (
-    <nav className="flex items-center space-x-4 lg:space-x-6">{children}</nav>
+    <nav className={twMerge('flex items-center', props.className)}>
+      {children}
+    </nav>
   )
 }

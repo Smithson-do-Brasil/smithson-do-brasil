@@ -29,7 +29,7 @@ export function Header() {
             />
           </Link>
 
-          <Nav.Root>
+          <Nav.Root className="space-x-4 lg:space-x-6">
             {navLinks.map((link, index) => (
               <Nav.Link key={index} to={link.to}>
                 {link.title}
