@@ -2,70 +2,86 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
 
 import { Form } from '@/components/form'
+import { Badge } from '@/components/ui/badge'
+import { Separator } from '@/components/ui/separator'
 
 export function Contact() {
   return (
     <>
       <Helmet title="Contato" />
-      <div className="container flex flex-col items-center justify-center gap-12 py-12 xl:flex-row">
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-foreground">
-            Entre em contato conosco
-          </h2>
+      <div className="relative">
+        <img
+          src="/hero-contact.png"
+          alt=""
+          className="max-h-[800px] w-full object-cover lg:max-h-[536px]"
+        />
 
-          <p className="text-lg text-muted-foreground">
-            Estamos ansiosos para ouvir de você! Por favor, preencha o
-            formulário abaixo e entraremos em contato o mais breve possível.
+        <div className="absolute left-6 top-2/4 -translate-y-2/4 transform space-y-4 md:left-10 lg:left-20">
+          <Badge className="bg-[#2364AA] text-sm font-medium text-zinc-50 hover:bg-[#2364AA] hover:brightness-90 lg:text-base">
+            Fale conosco
+          </Badge>
+          <h1 className="text-xl font-bold md:text-3xl lg:text-6xl">
+            Entre em contato
+          </h1>
+          <p className="text-sm font-medium md:text-base lg:text-lg">
+            Há mais de uma década, estamos comprometidos em <br />
+            ser uma ponte entre as pessoas e a tecnologia.
           </p>
-
-          <Form />
         </div>
+      </div>
+      <div className="container flex w-full flex-col items-center gap-12 py-12 lg:flex-row lg:gap-24 lg:py-24">
+        <Form />
 
-        <address className="space-y-8 rounded-lg bg-zinc-100 p-8 not-italic">
-          <h2 className="text-2xl font-bold text-zinc-950">
-            Outras formas de contato
-          </h2>
-          <p className="text-lg text-zinc-950">
-            Se preferir, sinta-se à vontade para entrar em contato conosco pelos
-            meios abaixo. Estamos disponíveis para ajudá-lo de qualquer maneira
-            que precisar.
-          </p>
+        <div className="space-y-6 rounded-lg bg-[#2364AA] p-8 lg:space-y-10 lg:p-16">
+          <h3 className="text-2xl font-bold">
+            Não espere para entrar em contato
+          </h3>
 
-          <section className="flex flex-col gap-2">
-            <a className="flex gap-2">
-              <MapPin size={24} className="fill-muted" />
-              <p className="text-zinc-950">
-                Avenida dos Mananciais, 1720 - Taquara, RJ
-              </p>
-            </a>
-            <a
-              href="mailto:chamados@smithson.com.br?subject=Orçamento&body=Gostaria de entrar em contato"
-              className="flex gap-2"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Mail size={24} className="fill-muted" />
-              <p className="text-zinc-950">chamados@smithson.com.br</p>
-            </a>
-            <a
-              href="https://api.whatsapp.com/send?phone=5521999991051&text=Ol%C3%A1,%20gostaria%20de%20fazer%20um%20or%C3%A7amento."
-              className="flex gap-2"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <Phone size={24} className="fill-muted" />
-              <p className="text-zinc-950">(21) 99999-1051</p>
-            </a>
-          </section>
+          <div className="space-y-2 text-sm">
+            <p>
+              <MapPin size={20} className="mr-2 inline-block" />
+              <a
+                href="https://www.google.com.br/maps/place/Av.+dos+Mananciais,+1720+-+Taquara,+Rio+de+Janeiro+-+RJ,+22720-410/@-22.9176724,-43.3972183,17z/data=!3m1!4b1!4m6!3m5!1s0x9bd8c51ff89001:0xbb31f9d68514e08f!8m2!3d-22.9176774!4d-43.394638!16s%2Fg%2F11c2h0pvny?entry=ttu"
+                className="text-zinc-50"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Avenida dos Mananciais, 1720 - Taquara, Rio de Janeiro - RJ,
+                22720-410
+              </a>
+            </p>
 
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.883365723487!2d-43.3972182882957!3d-22.917672438175153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd8f59f2840d1%3A0x25077c1eae0c3c88!2sSmithson%20do%20Brasil%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1709237917909!5m2!1spt-BR!2sbr"
-            width="100%"
-            height="450"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </address>
+            <p>
+              <Mail size={20} className="mr-2 inline-block" />
+              <a href="mailto:contato@smithson.com.br" className="text-zinc-50">
+                contato@smithson.com.br
+              </a>
+            </p>
+
+            <p>
+              <Phone size={20} className="mr-2 inline-block" />
+              <a href="tel:+5521964430605" className="text-zinc-50">
+                (21) 96443-0605
+              </a>
+            </p>
+          </div>
+
+          <Separator className="bg-zinc-200" />
+
+          <div className="space-y-4 rounded-sm bg-zinc-50 p-6 text-zinc-950">
+            <p className="text-base font-medium">
+              A smithson mudou a forma como enxergamos a tecnologia dentro de
+              nossas operações. Dos pontos mais simples aos mais complexos, ela
+              consegue extrair o melhor!
+            </p>
+
+            <p className="text-sm font-medium">
+              <strong>Marcelo Bastos</strong>
+              <br />
+              Diretor e Fundador
+            </p>
+          </div>
+        </div>
       </div>
     </>
   )
