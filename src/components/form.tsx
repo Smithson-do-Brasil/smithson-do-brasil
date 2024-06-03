@@ -53,12 +53,12 @@ export function Form() {
   return (
     <form
       onSubmit={handleSubmit(handleContactUs)}
-      className="flex w-full flex-col items-center gap-4 rounded-lg bg-zinc-50 p-6"
+      className="flex w-full flex-col items-center gap-4 rounded-lg bg-muted p-6"
     >
-      <h3 className="text-xl font-bold text-zinc-950 lg:text-2xl">
+      <h3 className="text-xl font-bold text-foreground lg:text-2xl">
         A um formulário de distância...
       </h3>
-      <p className="text-base font-medium text-zinc-950 lg:text-lg">
+      <p className="text-base font-medium text-foreground lg:text-lg">
         Seus concorrentes saíram na frente enquanto você esperou, mas não por
         muito tempo.
       </p>
@@ -100,7 +100,7 @@ export function Form() {
         {isSubmitting ? <Loading /> : 'Entrar em contato'}
       </Button>
 
-      <p className="text-center text-sm font-medium text-zinc-950">
+      <p className="text-center text-sm font-medium text-foreground">
         Preencha o formulário para que possamos entrar em{' '}
         <strong>contato</strong>.{' '}
         <span className="underline">Estamos prontos para ajudar!</span>

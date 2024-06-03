@@ -33,13 +33,13 @@ export function Contact() {
         <Form />
 
         <div className="space-y-6 rounded-lg bg-[#2364AA] p-8 lg:space-y-10 lg:p-16">
-          <h3 className="text-2xl font-bold">
+          <h3 className="text-2xl font-bold text-zinc-50">
             Não espere para entrar em contato
           </h3>
 
           <div className="space-y-2 text-sm">
             <p>
-              <MapPin size={20} className="mr-2 inline-block" />
+              <MapPin size={20} className="mr-2 inline-block text-zinc-50" />
               <a
                 href="https://www.google.com.br/maps/place/Av.+dos+Mananciais,+1720+-+Taquara,+Rio+de+Janeiro+-+RJ,+22720-410/@-22.9176724,-43.3972183,17z/data=!3m1!4b1!4m6!3m5!1s0x9bd8c51ff89001:0xbb31f9d68514e08f!8m2!3d-22.9176774!4d-43.394638!16s%2Fg%2F11c2h0pvny?entry=ttu"
                 className="text-zinc-50"
@@ -52,14 +52,14 @@ export function Contact() {
             </p>
 
             <p>
-              <Mail size={20} className="mr-2 inline-block" />
+              <Mail size={20} className="mr-2 inline-block text-zinc-50" />
               <a href="mailto:contato@smithson.com.br" className="text-zinc-50">
                 contato@smithson.com.br
               </a>
             </p>
 
             <p>
-              <Phone size={20} className="mr-2 inline-block" />
+              <Phone size={20} className="mr-2 inline-block text-zinc-50" />
               <a href="tel:+5521964430605" className="text-zinc-50">
                 (21) 96443-0605
               </a>
