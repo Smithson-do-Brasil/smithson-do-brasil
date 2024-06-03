@@ -5,6 +5,7 @@ import { AboutUs } from './pages/AboutUs'
 import { Contact } from './pages/Contact'
 import { Home } from './pages/Home'
 import { Layout } from './pages/layout'
+import { Policies } from './pages/Policies'
 import { Services } from './pages/Services'
 
 export const router = createBrowserRouter([
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
       {
         path: '/contato',
         element: <Contact />,
+      },
+      {
+        path: '/politicas-de-privacidade-e-seguranca/',
+        element: <Policies />,
       },
     ],
   },
