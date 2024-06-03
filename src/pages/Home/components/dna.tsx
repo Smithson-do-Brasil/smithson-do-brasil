@@ -11,7 +11,7 @@ export function Dna() {
 
         <p className="text-lg font-medium lg:text-2xl">
           Diga adeus às complexidades do passado e desbloqueie um caminho mais
-          prático para o sucesso de sua operação. Dê boas vindas à{' '}
+          prático para o sucesso da sua operação. Dê boas vindas à{' '}
           <strong className="text-[#2364AA]">
             era da simplicidade e eficiência.
           </strong>
@@ -22,17 +22,17 @@ export function Dna() {
         <DnaItem
           icon="HeartHandshake"
           title="Entrega de Valor para Empresas e Pessoas"
-          description="Diga adeus às complexidades do passado e desbloqueie um caminho mais prático para o sucesso. É simples como parece e nós fazemos!"
+          description="Entrega de valor com soluções tecnológicas, atendimento 24/7, e excelência, superando expectativas de empresas e pessoas há 25 anos."
         />
         <DnaItem
           icon="BarChart4"
           title="Evolução do Negócio e Impacto Funcional"
-          description="Diga adeus às complexidades do passado e desbloqueie um caminho mais prático para o sucesso. É simples como parece e nós fazemos!"
+          description="Transformamos negócios com soluções inovadoras, gerando impacto funcional positivo e constante evolução para empresas e pessoas."
         />
         <DnaItem
           icon="Wrench"
           title="Expertise Técnica e Excelência Operacional"
-          description="Diga adeus às complexidades do passado e desbloqueie um caminho mais prático para o sucesso. É simples como parece e nós fazemos!"
+          description="Oferecemos expertise técnica de ponta e excelência operacional, garantindo soluções eficientes e resultados excepcionais para empresas e pessoas."
         />
       </div>
     </section>
