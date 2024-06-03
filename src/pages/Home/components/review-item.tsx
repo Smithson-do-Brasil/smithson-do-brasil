@@ -1,27 +1,24 @@
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { CarouselItem } from '@/components/ui/carousel'
 
 interface ReviewItemProps {
   review: string
   name: string
+  role: string
+  image: string
 }
 
-export function ReviewItem({ review, name }: ReviewItemProps) {
+export function ReviewItem({ review, name, role, image }: ReviewItemProps) {
   return (
-    <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3">
-      <div className="flex h-full flex-col gap-4 rounded-lg bg-zinc-50 p-6 text-zinc-950">
-        <div className="flex items-start gap-2">
-          <Avatar>
-            <AvatarImage src={`https://ui-avatars.com/api/?name=${name}`} />
-            <AvatarFallback>{name.slice(0, 1).toUpperCase()}</AvatarFallback>
-          </Avatar>
+    <CarouselItem className="md:basis-1/2 md:pl-4 lg:basis-1/3">
+      <div className="flex h-full flex-col gap-12 rounded-sm bg-zinc-50 p-6 text-zinc-950 md:rounded-lg">
+        <img src={image} alt={name} className="ml-auto max-w-48 text-end" />
 
-          <div className="space-y-0.5">
-            <p className="text-lg font-bold">{name}</p>
-          </div>
+        <p className="text-base font-medium md:text-lg">{review}</p>
+
+        <div className="space-y-0.5">
+          <p className="text-base font-bold md:text-lg">{name}</p>
+          <p className="text-sm text-zinc-800 md:text-base">{role}</p>
         </div>
-
-        <h3 className="text-xl font-bold">{review}</h3>
       </div>
     </CarouselItem>
   )

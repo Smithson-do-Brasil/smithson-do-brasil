@@ -23,26 +23,36 @@ export function Review() {
         ]}
         className="mx-auto w-[90%] lg:w-full"
       >
-        <CarouselContent className="-mx-6">
+        <CarouselContent className="md:-mx-6">
           <ReviewItem
-            review="Ótimo atendimento, resolveram meu problema rapidamente e foram honestos com o orçamento."
-            name="Gabriel Miguel"
+            review="Antes da consultoria em TI da Smithson do Brasil, enfrentávamos desafios operacionais e de segurança de dados. Agora, com seus serviços, nossa empresa opera com eficiência e segurança de alto nível, permitindo-nos focar no crescimento do negócio."
+            name="Disraeli Sampaio"
+            role="CEO"
+            image="/empresas-parceiras/sampaio-metalis-color.png"
           />
           <ReviewItem
-            review="Empresa 1000!! Sempre solucionam meus problemas, muita rapidez e eficiência! O atendimento é ótimo, muito solicitos e atenciosos. Recomendo pra todo mundo!!"
-            name="Letícia Jardim"
+            review="Antes da consultoria em TI da Smithson do Brasil, enfrentávamos desafios operacionais e de segurança de dados. Agora, com seus serviços, nossa empresa opera com eficiência e segurança de alto nível, permitindo-nos focar no crescimento do negócio."
+            name="Disraeli Sampaio"
+            role="CEO"
+            image="/empresas-parceiras/sampaio-metalis-color.png"
           />
           <ReviewItem
-            review="Trabalho impecável, meu computador foi montado perfeitamente e entregue antes do prazo. Recomendo muito!"
-            name="João Gabriel Ramos"
+            review="Antes da consultoria em TI da Smithson do Brasil, enfrentávamos desafios operacionais e de segurança de dados. Agora, com seus serviços, nossa empresa opera com eficiência e segurança de alto nível, permitindo-nos focar no crescimento do negócio."
+            name="Disraeli Sampaio"
+            role="CEO"
+            image="/empresas-parceiras/sampaio-metalis-color.png"
           />
           <ReviewItem
-            review="Marcelo é um excelente profissional. Recomendo por sua honestidade e qualidade do serviço."
-            name="Renata Ferreira"
+            review="Antes da consultoria em TI da Smithson do Brasil, enfrentávamos desafios operacionais e de segurança de dados. Agora, com seus serviços, nossa empresa opera com eficiência e segurança de alto nível, permitindo-nos focar no crescimento do negócio."
+            name="Disraeli Sampaio"
+            role="CEO"
+            image="/empresas-parceiras/sampaio-metalis-color.png"
           />
           <ReviewItem
-            review="Serviço de qualidade e confiança. Se precisar, pode chamar!"
-            name="Lorenzo Dellano"
+            review="Antes da consultoria em TI da Smithson do Brasil, enfrentávamos desafios operacionais e de segurança de dados. Agora, com seus serviços, nossa empresa opera com eficiência e segurança de alto nível, permitindo-nos focar no crescimento do negócio."
+            name="Disraeli Sampaio"
+            role="CEO"
+            image="/empresas-parceiras/sampaio-metalis-color.png"
           />
         </CarouselContent>
       </Carousel>
