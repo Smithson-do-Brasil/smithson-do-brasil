@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 
+import { AboutUs } from './components/about-us'
 import { Dna } from './components/dna'
 import { Introduction } from './components/introduction'
 import { Numbers } from './components/numbers'
@@ -12,27 +13,28 @@ export function Home() {
     <>
       <Helmet title="Home" />
 
-      <div className="space-y-24 pb-12">
-        <div className="bg-teal-200">
-          <Introduction.Root>
-            <Introduction.Button
-              href="/servicos"
-              title="Saiba o que fazemos"
-              className="border-[1px] border-zinc-950 bg-zinc-50 text-zinc-950 hover:bg-zinc-200"
-            />
-            <Introduction.Button
-              href="/servicos"
-              title="Fale com a gente"
-              className="bg-zinc-950 text-zinc-50 hover:bg-zinc-700"
-            />
-          </Introduction.Root>
-        </div>
-        <Partners />
-        <Numbers />
-        <Dna />
-        <Services />
-        <Review />
+      <div className="bg-teal-200">
+        <Introduction.Root>
+          <Introduction.Button
+            href="/servicos"
+            title="Saiba o que fazemos"
+            className="border-[1px] border-zinc-950 bg-zinc-50 text-zinc-950 hover:bg-zinc-200"
+          />
+          <Introduction.Button
+            href="/servicos"
+            title="Fale com a gente"
+            className="bg-zinc-950 text-zinc-50 hover:bg-zinc-700"
+          />
+        </Introduction.Root>
       </div>
+      <div className="bg-teal-200">
+        <AboutUs />
+      </div>
+      <Partners />
+      <Numbers />
+      <Dna />
+      <Services />
+      <Review />
     </>
   )
 }
