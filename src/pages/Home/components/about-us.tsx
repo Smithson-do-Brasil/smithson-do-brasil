@@ -1,7 +1,7 @@
 export function AboutUs() {
   return (
-    <div className="relative py-28">
-      <img src="about-us-animate.svg" alt="" className="absolute left-0 z-10" />
+    <div className="container flex items-center gap-10 py-28">
+      <img src="/about-us.svg" alt="" className="w-full" />
       <section className="container flex flex-col items-end gap-12 bg-teal-200 text-end">
         <h2 className="text-6xl font-bold italic text-zinc-950">
           Quem somos nós?
