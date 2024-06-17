@@ -5,7 +5,9 @@ const envSchema = z.object({
   VITE_EMAILJS_SERVICE_ID: z.string(),
   VITE_EMAILJS_TEMPLATE_ID: z.string(),
   VITE_EMAILJS_PUBLIC_KEY: z.string(),
-  VITE_MAINTENANCE_MODE: z.coerce.boolean(),
+  VITE_MAINTENANCE_MODE: z
+    .enum(['true', 'false'])
+    .transform((value) => value === 'true'),
 })
 
 export const env = envSchema.parse(import.meta.env)
