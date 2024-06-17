@@ -5,7 +5,9 @@ export function Maintenance() {
     <div className="container flex min-h-screen flex-col items-center justify-center gap-4 lg:gap-12">
       <ConstructionIcon className="h-12 w-12 text-foreground" />
       <div className="space-y-4 text-center">
-        <h1 className="text-2xl font-bold lg:text-4xl">Site em Construção</h1>
+        <h1 className="font-ppformula text-2xl font-bold lg:text-4xl">
+          Site em Construção
+        </h1>
         <p className="text-sm text-foreground lg:text-lg">
           Estamos trabalhando duro para trazer a você uma nova experiência
           incrível!
