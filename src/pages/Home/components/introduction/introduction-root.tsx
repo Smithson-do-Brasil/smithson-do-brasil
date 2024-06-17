@@ -25,7 +25,7 @@ export function IntroductionRoot({ children }: IntroductionRootProps) {
         </div>
       </Link>
 
-      <h1 className="text-center text-3xl font-bold text-zinc-950 lg:text-7xl">
+      <h1 className="font-ppformula text-center text-3xl font-bold text-zinc-950 lg:text-7xl">
         Assessoria em <br />
         Informática e Tecnologia
       </h1>

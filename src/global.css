@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'PP Formula';
+  src: url("../src/assets/fonts/PPFormula-NarrowBoldItalic.ttf");
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
