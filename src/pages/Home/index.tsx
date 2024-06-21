@@ -13,7 +13,7 @@ export function Home() {
     <>
       <Helmet title="Home" />
 
-      <div className="bg-teal-200 dark:bg-zinc-950">
+      <div className="bg-teal-200 text-foreground dark:bg-zinc-950 dark:text-teal-200">
         <Introduction.Root>
           <Introduction.Button
             href="/servicos"
@@ -26,15 +26,13 @@ export function Home() {
             className="bg-zinc-950 text-zinc-50 hover:bg-zinc-700 dark:bg-teal-200 dark:text-zinc-950"
           />
         </Introduction.Root>
-      </div>
-      <div className="bg-teal-200">
         <AboutUs />
+        <Partners />
+        <Numbers />
+        <Dna />
+        <Services />
+        <Review />
       </div>
-      <Partners />
-      <Numbers />
-      <Dna />
-      <Services />
-      <Review />
     </>
   )
 }
