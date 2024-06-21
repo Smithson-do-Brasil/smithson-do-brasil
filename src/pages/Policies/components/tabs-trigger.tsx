@@ -9,7 +9,7 @@ export function TabsTrigger({ value, title }: TabsTriggerProps) {
   return (
     <TabsTriggerShadcn
       value={value}
-      className="rounded-none border-b-[#2364AA] text-base text-foreground data-[state=active]:border-b-2 data-[state=active]:text-[#2364AA]"
+      className="rounded-none border-b-teal-200 text-base text-foreground data-[state=active]:border-b-2 data-[state=active]:text-foreground dark:data-[state=active]:text-teal-200"
     >
       {title}
     </TabsTriggerShadcn>

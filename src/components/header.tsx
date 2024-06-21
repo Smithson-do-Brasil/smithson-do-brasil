@@ -14,18 +14,18 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 hidden  bg-[rgba(255,255,255,0.5)] dark:bg-[rgba(0,0,0,0.5)] lg:block">
+      <header className="sticky top-0 z-50 hidden  bg-zinc-50 dark:bg-zinc-950 lg:block">
         <div className="flex h-16 items-center justify-between gap-6 px-20 py-3">
           <Link to="/" className="h-full">
             <img
-              src="logo-smithson-dark.svg"
-              alt=""
-              className="hidden h-full w-full dark:block"
-            />
-            <img
               src="logo-smithson.svg"
               alt=""
-              className="block h-full w-full dark:hidden"
+              className="h-full dark:hidden"
+            />
+            <img
+              src="logo-smithson-dark.svg"
+              alt=""
+              className="hidden h-full dark:block"
             />
           </Link>
 
