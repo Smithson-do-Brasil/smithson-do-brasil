@@ -54,17 +54,19 @@ export function Footer() {
         <FooterAnimation />
       </section>
 
-      <section className="bg-zinc-950">
+      <section className="bg-zinc-50 text-zinc-950 dark:bg-zinc-950">
         <div className="container flex justify-between py-8 text-zinc-50">
           <div className="space-y-2">
-            <h3 className="text-2xl font-bold">Smithson do Brasil</h3>
+            <h3 className="text-2xl font-bold text-foreground">
+              Smithson do Brasil
+            </h3>
 
             <div className="flex items-center gap-2">
               <a
                 href="https://www.linkedin.com/company/smithson-do-brasil/"
                 target="_blank"
                 rel="noreferrer"
-                className="transition-all hover:brightness-90"
+                className="text-foreground transition-all hover:brightness-90"
               >
                 <SiLinkedin size={20} />
               </a>
@@ -72,7 +74,7 @@ export function Footer() {
                 href="https://www.instagram.com/smithsondobrasil/"
                 target="_blank"
                 rel="noreferrer"
-                className="transition-all hover:brightness-90"
+                className="text-foreground transition-all hover:brightness-90"
               >
                 <SiInstagram size={20} />
               </a>
@@ -80,7 +82,7 @@ export function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noreferrer"
-                className="transition-all hover:brightness-90"
+                className="text-foreground transition-all hover:brightness-90"
               >
                 <SiFacebook size={20} />
               </a>
@@ -128,10 +130,10 @@ export function Footer() {
         </div>
       </section>
 
-      <Separator />
+      <Separator className="bg-foreground" />
 
-      <section className="bg-zinc-950">
-        <div className="container flex flex-col items-center justify-between py-4 text-zinc-50 lg:flex-row lg:gap-0">
+      <section className="bg-zinc-50 dark:bg-zinc-950">
+        <div className="container flex flex-col items-center justify-between py-4 dark:text-zinc-50 lg:flex-row lg:gap-0">
           <p className="text-center text-sm">
             &copy;{new Date().getFullYear()} Smithson do Brasil - CNPJ
             00.460.978/0001-36.
