@@ -1,7 +1,9 @@
 import emailjs from '@emailjs/browser'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { ComponentProps } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
+import { twMerge } from 'tailwind-merge'
 import { z } from 'zod'
 
 import { Button } from '@/components/ui/button'
@@ -18,7 +20,7 @@ export const contactFormSchema = z.object({
 
 export type ContactFormSchema = z.infer<typeof contactFormSchema>
 
-export function Form() {
+export function Form(props: ComponentProps<'form'>) {
   const {
     register,
     handleSubmit,
@@ -53,14 +55,17 @@ export function Form() {
   return (
     <form
       onSubmit={handleSubmit(handleContactUs)}
-      className="flex w-full flex-col items-center gap-4 rounded-lg bg-muted p-6"
+      className={twMerge(
+        'flex w-full flex-col items-center gap-4 rounded-lg bg-zinc-50 p-8',
+        props.className,
+      )}
     >
-      <h3 className="text-xl font-bold text-foreground lg:text-2xl">
+      <h3 className="text-xl font-bold text-zinc-950 lg:text-2xl">
         A um formulário de distância...
       </h3>
-      <p className="text-base font-medium text-foreground lg:text-lg">
-        Seus concorrentes saíram na frente enquanto você esperou, mas não por
-        muito tempo.
+      <p className="text-center text-base font-medium text-zinc-950 lg:text-lg">
+        Seus concorrentes saíram na frente enquanto você
+        <br /> esperou, mas não por muito tempo.
       </p>
 
       <Input
@@ -94,15 +99,15 @@ export function Form() {
 
       <Button
         disabled={isSubmitting}
-        className="w-full bg-[#4C6FF7] text-lg text-zinc-50 hover:bg-[#4C6FF7] hover:brightness-90"
+        className="w-full bg-zinc-950 text-lg text-zinc-50 hover:bg-zinc-700 hover:brightness-90"
         type="submit"
       >
         {isSubmitting ? <Loading /> : 'Entrar em contato'}
       </Button>
 
-      <p className="text-center text-sm font-medium text-foreground">
-        Preencha o formulário para que possamos entrar em{' '}
-        <strong>contato</strong>.{' '}
+      <p className="text-center text-sm font-medium text-zinc-950">
+        Preencha o formulário para que possamos
+        <br /> entrar em <strong>contato. </strong>
         <span className="underline">Estamos prontos para ajudar!</span>
       </p>
     </form>

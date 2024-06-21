@@ -33,7 +33,7 @@ export function Input({
         <Textarea
           id={id}
           placeholder={placeholder}
-          className="rounded-sm bg-white px-5 py-3 text-base font-medium text-zinc-950"
+          className="rounded-sm border-0 bg-teal-200 px-5 py-3 text-base font-medium text-zinc-950 placeholder:text-zinc-950"
           {...register(id)}
           {...rest}
         />
@@ -42,7 +42,7 @@ export function Input({
           id={id}
           type={type}
           placeholder={placeholder}
-          className="rounded-sm bg-white px-5 py-3 text-base font-medium text-zinc-950"
+          className="rounded-sm border-0 bg-teal-200 px-5 py-3 text-base font-medium text-zinc-950 placeholder:text-zinc-950"
           {...register(id)}
           {...rest}
         />
