@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 
-import { AboutUs } from './components/about-us'
-import { Dna } from './components/dna'
+import { AboutUs } from './components/about-us/about-us'
+import { Dna } from './components/dna/dna'
 import { Introduction } from './components/introduction'
 import { Numbers } from './components/numbers/numbers'
 import { Partners } from './components/partners'
@@ -29,10 +29,10 @@ export function Home() {
 
         <AboutUs />
         <Numbers />
-        <Partners />
         <Dna />
+        {/* <Partners />
         <Services />
-        <Review />
+        <Review /> */}
       </div>
     </>
   )
