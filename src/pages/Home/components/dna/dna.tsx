@@ -1,16 +1,18 @@
 import { DnaAnimate } from './dna-animate'
+import { DnaIcon } from './dna-icon'
 import { DnaItem } from './dna-item'
 
 export function Dna() {
   return (
-    <section className="relative flex flex-col items-end justify-center gap-8 lg:gap-20">
+    <section className="relative flex flex-col items-end justify-center gap-8 py-[136px] lg:gap-24">
       <div className="container space-y-5 text-end">
         <h2 className="font-ppformula text-6xl font-bold italic">
           Nossa essência
         </h2>
         <p className="ml-auto w-2/4 text-xl font-medium">
-          Acreditamos que a tecnologia deve ser uma aliada que simplifica a vida
-          e impulsiona negócios, não o contrário.
+          A empresa que você chama quando está com problemas - ou quando quer
+          evitar eles... na Smithson, acreditamos que a tecnologia deve ser uma
+          aliada que simplifica a vida e impulsiona negócios, não o contrário.
         </p>
       </div>
 
@@ -39,6 +41,10 @@ export function Dna() {
 
       <div className="absolute -left-20 top-2/4 -translate-y-2/4 transform">
         <DnaAnimate />
+      </div>
+
+      <div className="absolute bottom-4 right-1/3">
+        <DnaIcon />
       </div>
     </section>
   )
