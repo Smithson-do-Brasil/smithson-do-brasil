@@ -6,8 +6,8 @@ import { NumbersItem } from './numbers-item'
 
 export function Numbers() {
   return (
-    <div className="space-y-24 py-32">
-      <section className="container relative flex items-center justify-between">
+    <div className="relative space-y-24 py-32">
+      <section className="container flex items-center justify-between">
         <div className="space-y-5">
           <h2 className="font-ppformula text-6xl font-bold italic">
             Nossos números
@@ -23,11 +23,11 @@ export function Numbers() {
         </div>
 
         <NumbersIcon />
-
-        <div className="absolute right-0 top-8">
-          <NumbersAnimate />
-        </div>
       </section>
+
+      <div className="absolute right-0 top-8">
+        <NumbersAnimate />
+      </div>
 
       <section className="flex items-center justify-center">
         <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-20">
