@@ -6,11 +6,18 @@ import { Nav } from './nav'
 import { ThemeToggle } from './theme/theme-toggle'
 
 export function Header() {
-  const navLinks = [
-    { title: 'Home', to: '/' },
-    { title: 'Sobre', to: '/quem-somos' },
-    { title: 'Serviços', to: '/servicos' },
-    { title: 'Contato', to: '/contato' },
+  // const navLinks = [
+  //   { title: 'Home', to: '/' },
+  //   { title: 'Sobre', to: '/quem-somos' },
+  //   { title: 'Serviços', to: '/servicos' },
+  //   { title: 'Contato', to: '/contato' },
+  // ]
+
+  const temporaryNavLinks = [
+    // { title: 'Home', to: '#introduction' },
+    { title: 'Sobre', to: '#aboutUs' },
+    { title: 'Serviços', to: '#services' },
+    { title: 'Contato', to: '#contact' },
   ]
 
   return (
@@ -22,7 +29,10 @@ export function Header() {
           </Link>
 
           <Nav.Root className="space-x-4 lg:space-x-6">
-            {navLinks.map((link, index) => (
+            {temporaryNavLinks.map((link, index) => (
+              // <Nav.Link key={index} to={link.to}>
+              //   {link.title}
+              // </Nav.Link>
               <Nav.Link key={index} to={link.to}>
                 {link.title}
               </Nav.Link>
@@ -35,7 +45,7 @@ export function Header() {
         </div>
       </header>
 
-      <HeaderMobile navLinks={navLinks} />
+      <HeaderMobile navLinks={temporaryNavLinks} />
     </>
   )
 }

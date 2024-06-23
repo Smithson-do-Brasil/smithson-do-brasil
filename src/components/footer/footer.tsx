@@ -15,7 +15,7 @@ import { FooterMenu } from './footer-menu'
 
 export function Footer() {
   return (
-    <footer className="bg-teal-200 pt-16 dark:bg-zinc-950">
+    <footer className="bg-teal-200 pt-16 dark:bg-zinc-950" id="contact">
       <section className="container relative flex items-end justify-between overflow-hidden rounded-lg bg-muted px-0 text-foreground dark:bg-teal-200 dark:text-zinc-950">
         <div className="w-full space-y-3 px-4 py-8 sm:w-2/4 lg:px-8 lg:py-12">
           <img

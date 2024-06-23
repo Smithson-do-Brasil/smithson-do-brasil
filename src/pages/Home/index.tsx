@@ -30,9 +30,9 @@ export function Home() {
         <AboutUs />
         <Numbers />
         <Dna />
-        {/* <Partners />
+        <Partners />
         <Services />
-        <Review /> */}
+        <Review />
       </div>
     </>
   )

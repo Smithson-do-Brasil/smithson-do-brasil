@@ -10,7 +10,10 @@ interface IntroductionRootProps {
 
 export function IntroductionRoot({ children }: IntroductionRootProps) {
   return (
-    <div className="container flex flex-col items-center justify-center gap-8 py-16 text-zinc-950 dark:text-teal-200">
+    <div
+      className="container flex flex-col items-center justify-center gap-8 py-16 text-zinc-950 dark:text-teal-200"
+      id="aboutUs"
+    >
       <Link to="/servicos">
         <div className="flex w-max cursor-pointer items-center gap-2 rounded-full bg-zinc-950 p-1 transition-all hover:bg-zinc-700 hover:brightness-90 dark:bg-teal-200">
           <Badge className="bg-zinc-50 p-1 text-xs text-zinc-950 hover:bg-zinc-200 dark:bg-zinc-950 dark:text-teal-200 lg:p-2">
