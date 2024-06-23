@@ -2,6 +2,7 @@ import { Facebook, Instagram, Menu } from 'lucide-react'
 import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
+import { Logo } from './logo'
 import { ThemeToggle } from './theme/theme-toggle'
 import { Drawer, DrawerContent, DrawerHeader, DrawerTrigger } from './ui/drawer'
 import { Separator } from './ui/separator'
@@ -23,7 +24,7 @@ export function HeaderMobile({ navLinks }: NavLinks) {
   }
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between bg-zinc-50 px-4 dark:bg-zinc-950 lg:hidden">
+    <header className="sticky top-0 z-50 flex items-center justify-between bg-zinc-50 px-4 py-3 dark:bg-zinc-950 lg:hidden">
       <Drawer direction="left" open={open} onOpenChange={setOpen}>
         <DrawerTrigger className="bg-transparent" onClick={() => setOpen(true)}>
           <Menu className="text-zinc-950 dark:text-zinc-50" />
@@ -56,16 +57,7 @@ export function HeaderMobile({ navLinks }: NavLinks) {
       </Drawer>
 
       <Link to="/">
-        <img
-          src="logo-smithson-dark.svg"
-          alt=""
-          className="hidden h-20 w-20 dark:block"
-        />
-        <img
-          src="logo-smithson.svg"
-          alt=""
-          className="block h-20 w-20 dark:hidden"
-        />
+        <Logo />
       </Link>
 
       <div className="flex items-center">
