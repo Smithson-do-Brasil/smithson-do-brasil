@@ -8,7 +8,7 @@ export function AboutUs() {
         <AboutUsHeroImage />
 
         <div className="flex w-full flex-col items-end gap-12">
-          <h2 className="font-ppformula text-6xl font-bold italic">
+          <h2 className="font-bold font-ppformula text-6xl italic">
             Quem somos nós?
           </h2>
           <p className="flex flex-col items-end gap-4 text-end font-medium text-xl">
@@ -25,7 +25,7 @@ export function AboutUs() {
             </span>
             <span>Fale conosco.</span>
           </p>
-          <h3 className="font-ppformula text-4xl font-bold italic">
+          <h3 className="font-bold font-ppformula text-4xl italic">
             Somos experts em manter as coisas <br /> funcionando como deveriam.
           </h3>
         </div>

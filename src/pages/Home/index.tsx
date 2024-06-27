@@ -1,9 +1,9 @@
 import { Helmet } from 'react-helmet-async'
 
-import { AboutUs } from './components/about-us/about-us'
-import { Dna } from './components/dna/dna'
+import { AboutUs } from './components/about-us'
+import { Dna } from './components/dna'
 import { Introduction } from './components/introduction'
-import { Numbers } from './components/numbers/numbers'
+import { Numbers } from './components/numbers'
 import { Partners } from './components/partners'
 import { Review } from './components/review'
 import { Services } from './components/services'

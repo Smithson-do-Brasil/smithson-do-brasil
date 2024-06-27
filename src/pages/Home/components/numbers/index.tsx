@@ -9,7 +9,7 @@ export function Numbers() {
     <div className="relative space-y-24 py-32">
       <section className="container flex items-center justify-between">
         <div className="space-y-5">
-          <h2 className="font-ppformula text-6xl font-bold italic">
+          <h2 className="font-bold font-ppformula text-6xl italic">
             Nossos números
           </h2>
           <p className="w-2/4 font-medium text-xl">

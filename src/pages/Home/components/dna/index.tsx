@@ -6,7 +6,7 @@ export function Dna() {
   return (
     <section className="relative flex flex-col items-end justify-center gap-8 py-[136px] lg:gap-24">
       <div className="container space-y-5 text-end">
-        <h2 className="font-ppformula text-6xl font-bold italic">
+        <h2 className="font-bold font-ppformula text-6xl italic">
           Nossa essência
         </h2>
         <p className="ml-auto w-2/4 font-medium text-xl">

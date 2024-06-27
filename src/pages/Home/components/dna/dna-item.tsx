@@ -17,7 +17,7 @@ export function DnaItem({ icon, title, description }: DnaItemProps) {
         <LucideIcon className="h-14 w-14 lg:h-10 lg:w-10" />
       </CardHeader>
       <CardContent className="space-y-1 p-0">
-        <h2 className="text-xl font-bold">{title}</h2>
+        <h2 className="font-bold text-xl">{title}</h2>
         <p className="text-sm">{description}</p>
       </CardContent>
     </Card>
