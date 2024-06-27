@@ -15,7 +15,7 @@ export function ServicesItem({ icon, title, description }: ServicesItemProps) {
         <LucideIcon color="white" className="h-6 w-6 lg:h-12 lg:w-12" />
       </div>
       <div>
-        <h3 className="text-xl font-bold lg:text-2xl">{title}</h3>
+        <h3 className="font-bold text-xl lg:text-2xl">{title}</h3>
         <p className="text-base text-muted-foreground lg:text-xl">
           {description}
         </p>

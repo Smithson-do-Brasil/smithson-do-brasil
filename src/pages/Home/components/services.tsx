@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 import { Button } from '@/components/ui/button'
 
-import { Accordion } from './accordion'
+import { Accordion } from '../../../components/accordion'
 import { ServicesItem } from './services-item'
 
 export function Services() {
@@ -42,7 +42,7 @@ export function Services() {
       </Accordion.Root>
 
       <div className="flex flex-col items-center gap-8 lg:gap-24">
-        <h2 className="text-center text-2xl font-bold lg:text-4xl">
+        <h2 className="text-center font-bold text-2xl lg:text-4xl">
           E não para por aí...
         </h2>
 
