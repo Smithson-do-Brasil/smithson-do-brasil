@@ -17,13 +17,13 @@ export function Contact() {
         />
 
         <div className="absolute left-6 top-2/4 -translate-y-2/4 transform space-y-4 md:left-10 lg:left-20">
-          <Badge className="bg-[#2364AA] text-sm font-medium text-zinc-50 hover:bg-[#2364AA] hover:brightness-90 lg:text-base">
+          <Badge className="bg-[#2364AA] font-medium text-sm text-zinc-50 hover:bg-[#2364AA] hover:brightness-90 lg:text-base">
             Fale conosco
           </Badge>
           <h1 className="text-xl font-bold md:text-3xl lg:text-6xl">
             Entre em contato
           </h1>
-          <p className="text-sm font-medium md:text-base lg:text-lg">
+          <p className="font-medium text-sm md:text-base lg:text-lg">
             Há mais de uma década, estamos comprometidos em <br />
             ser uma ponte entre as pessoas e a tecnologia.
           </p>
@@ -69,13 +69,13 @@ export function Contact() {
           <Separator className="bg-zinc-200" />
 
           <div className="space-y-4 rounded-sm bg-zinc-50 p-6 text-zinc-950">
-            <p className="text-base font-medium">
+            <p className="font-medium text-base">
               A smithson mudou a forma como enxergamos a tecnologia dentro de
               nossas operações. Dos pontos mais simples aos mais complexos, ela
               consegue extrair o melhor!
             </p>
 
-            <p className="text-sm font-medium">
+            <p className="font-medium text-sm">
               <strong>Marcelo Bastos</strong>
               <br />
               Diretor e Fundador

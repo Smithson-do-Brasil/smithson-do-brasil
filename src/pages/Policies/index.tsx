@@ -5,7 +5,7 @@ import { TabsTrigger } from './components/tabs-trigger'
 export function Policies() {
   return (
     <div className="container mx-auto space-y-24 py-24">
-      <h1 className="mb-4 text-center text-6xl font-medium">
+      <h1 className="mb-4 text-center font-medium text-6xl">
         Política de Privacidade e Segurança
       </h1>
 

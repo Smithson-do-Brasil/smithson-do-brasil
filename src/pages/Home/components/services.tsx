@@ -12,7 +12,7 @@ export function Services() {
         <Accordion.Item value="item-1">
           <Accordion.Trigger title="Hardware" />
           <Accordion.Content>
-            <ul className="space-y-4 text-base font-medium lg:text-xl">
+            <ul className="space-y-4 font-medium text-base lg:text-xl">
               <li>Montagem e configuração de computadores</li>
               <li>
                 Venda e instalação de periféricos (impressoras, scanners, etc.)
@@ -27,7 +27,7 @@ export function Services() {
         <Accordion.Item value="item-2">
           <Accordion.Trigger title="Sistemas" />
           <Accordion.Content>
-            <ul className="space-y-4 text-base font-medium lg:text-xl">
+            <ul className="space-y-4 font-medium text-base lg:text-xl">
               <li>
                 Implementação de sistemas de gestão empresarial (ERP) e customer
                 relationship management (CRM)
@@ -80,7 +80,7 @@ export function Services() {
         </div>
 
         <Link to="/servicos">
-          <Button className="rounded-3xl bg-[#2364AA] p-4 text-base font-medium text-zinc-50 hover:bg-[#3a75b4] lg:text-lg">
+          <Button className="rounded-3xl bg-[#2364AA] p-4 font-medium text-base text-zinc-50 hover:bg-[#3a75b4] lg:text-lg">
             Conheça nossos serviços
           </Button>
         </Link>

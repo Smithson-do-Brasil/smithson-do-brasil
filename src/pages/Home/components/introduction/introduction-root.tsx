@@ -20,7 +20,7 @@ export function IntroductionRoot({ children }: IntroductionRootProps) {
             Novidades
           </Badge>
 
-          <p className="text-xs font-medium text-zinc-50 dark:text-zinc-950 lg:text-sm">
+          <p className="font-medium text-xs text-zinc-50 dark:text-zinc-950 lg:text-sm">
             Confira nosso desenvolvimento de sites
           </p>
 
@@ -33,7 +33,7 @@ export function IntroductionRoot({ children }: IntroductionRootProps) {
         Informática e Tecnologia
       </h1>
 
-      <p className="text-center text-sm font-medium lg:text-2xl">
+      <p className="text-center font-medium text-sm lg:text-2xl">
         Porque se algo não está funcionando como <br /> deveria, alguém terá uma
         bela dor de cabeça...
       </p>

@@ -3,7 +3,7 @@ import { TimelineItem } from './timeline-item'
 export function Timeline() {
   return (
     <section className="space-y-8">
-      <h2 className="text-center text-5xl font-medium text-foreground">
+      <h2 className="text-center font-medium text-5xl text-foreground">
         Nossa jornada
       </h2>
       <ol

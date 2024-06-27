@@ -39,12 +39,12 @@ export function Footer() {
           <h3 className="font-ppformula text-6xl font-bold dark:text-teal-200">
             Fale Conosco
           </h3>
-          <p className="text-xl font-medium dark:text-teal-200">
+          <p className="font-medium text-xl dark:text-teal-200">
             Precisando de suporte técnico ou
             <br /> gostaria de discutir seu próximo
             <br /> projeto?
           </p>
-          <p className="text-xl font-medium dark:text-teal-200">
+          <p className="font-medium text-xl dark:text-teal-200">
             Estamos aqui.
           </p>
         </div>

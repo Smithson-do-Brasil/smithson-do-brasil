@@ -46,7 +46,7 @@ export function HeaderMobile({ navLinks }: NavLinks) {
               <NavLink
                 key={index}
                 to={link.to}
-                className="text-sm font-medium"
+                className="font-medium text-sm"
                 onClick={handleClose}
               >
                 {link.title}

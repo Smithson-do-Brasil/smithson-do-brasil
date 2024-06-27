@@ -63,7 +63,7 @@ export function Form(props: ComponentProps<'form'>) {
       <h3 className="text-xl font-bold text-zinc-950 lg:text-2xl">
         A um formulário de distância...
       </h3>
-      <p className="text-center text-base font-medium text-zinc-950 lg:text-lg">
+      <p className="text-center font-medium text-base text-zinc-950 lg:text-lg">
         Seus concorrentes saíram na frente enquanto você
         <br /> esperou, mas não por muito tempo.
       </p>
@@ -105,7 +105,7 @@ export function Form(props: ComponentProps<'form'>) {
         {isSubmitting ? <Loading /> : 'Entrar em contato'}
       </Button>
 
-      <p className="text-center text-sm font-medium text-zinc-950">
+      <p className="text-center font-medium text-sm text-zinc-950">
         Preencha o formulário para que possamos
         <br /> entrar em <strong>contato. </strong>
         <span className="underline">Estamos prontos para ajudar!</span>
