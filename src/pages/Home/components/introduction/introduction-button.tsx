@@ -18,7 +18,7 @@ export function IntroductionButton({
     <a href={href} className="w-full md:w-max">
       <Button
         className={twMerge(
-          'flex w-full items-center gap-2 rounded-full text-base font-medium hover:brightness-90 sm:w-max lg:text-lg',
+          'flex w-full items-center gap-2 rounded-full font-medium text-base hover:brightness-90 sm:w-max lg:text-lg',
           props.className,
         )}
       >

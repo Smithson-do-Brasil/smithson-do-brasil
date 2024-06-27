@@ -100,7 +100,7 @@ export function Partners() {
           Empresas que confiam no nosso trabalho
         </h2>
 
-        <p className="text-lg font-medium lg:text-2xl">
+        <p className="font-medium text-lg lg:text-2xl">
           Diga adeus às complexidades do passado e desbloqueie um caminho mais
           prático para o sucesso de sua operação. Dê boas vindas à{' '}
           <strong className="text-[#2364AA]">

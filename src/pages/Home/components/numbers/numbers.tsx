@@ -12,7 +12,7 @@ export function Numbers() {
           <h2 className="font-ppformula text-6xl font-bold italic">
             Nossos números
           </h2>
-          <p className="w-2/4 text-xl font-medium">
+          <p className="w-2/4 font-medium text-xl">
             Premiada por diversas instituições como{' '}
             <span className="text-[#FF00FF]">X</span> e{' '}
             <span className="text-[#FF00FF]">Y</span> e representante direta de
