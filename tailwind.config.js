@@ -54,6 +54,7 @@ module.exports = {
         teal: {
           200: '#CCFBF1',
         },
+        whatsapp: '#25D366',
       },
       borderRadius: {
         lg: 'var(--radius)',
