@@ -76,6 +76,9 @@ module.exports = {
       },
       fontFamily: {
         ppformula: ['PP Formula', 'sans-serif'],
+        medium: ['Visby CF Medium', 'sans-serif'],
+        semibold: ['Visby CF DemiBold', 'sans-serif'],
+        bold: ['Visby CF Bold', 'sans-serif'],
       },
     },
   },

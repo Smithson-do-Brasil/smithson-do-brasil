@@ -11,7 +11,7 @@ export function AboutUs() {
           <h2 className="font-ppformula text-6xl font-bold italic">
             Quem somos nós?
           </h2>
-          <p className="flex flex-col items-end gap-4 text-end text-xl font-medium">
+          <p className="flex flex-col items-end gap-4 text-end font-medium text-xl">
             <span>
               A empresa que você chama quando está com problemas <br />
               ou quando quer evitar eles...

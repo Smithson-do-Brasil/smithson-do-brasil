@@ -9,7 +9,7 @@ export function Dna() {
         <h2 className="font-ppformula text-6xl font-bold italic">
           Nossa essência
         </h2>
-        <p className="ml-auto w-2/4 text-xl font-medium">
+        <p className="ml-auto w-2/4 font-medium text-xl">
           A empresa que você chama quando está com problemas - ou quando quer
           evitar eles... na Smithson, acreditamos que a tecnologia deve ser uma
           aliada que simplifica a vida e impulsiona negócios, não o contrário.
