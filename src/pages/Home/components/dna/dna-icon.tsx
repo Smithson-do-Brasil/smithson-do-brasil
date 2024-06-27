@@ -6,6 +6,7 @@ export function DnaIcon() {
       viewBox="0 0 82 72"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="hidden lg:block"
     >
       <path
         d="M2.72554 26.1819L10.395 12.8979L18.0645 26.1819H2.72554Z"

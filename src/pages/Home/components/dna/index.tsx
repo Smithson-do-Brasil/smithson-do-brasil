@@ -1,15 +1,14 @@
-import { DnaAnimate } from './dna-animate'
 import { DnaIcon } from './dna-icon'
 import { DnaItem } from './dna-item'
 
 export function Dna() {
   return (
-    <section className="relative flex flex-col items-end justify-center gap-8 py-[136px] lg:gap-24">
-      <div className="container space-y-5 text-end">
-        <h2 className="font-bold font-ppformula text-6xl italic">
+    <section className="relative flex flex-col items-end justify-center gap-8 py-8 lg:gap-24 lg:py-[136px]">
+      <div className="container space-y-5 text-center lg:text-end">
+        <h2 className="font-bold font-ppformula text-4xl italic lg:text-6xl">
           Nossa essência
         </h2>
-        <p className="ml-auto w-2/4 font-medium text-xl">
+        <p className="ml-auto w-full font-medium text-base lg:w-2/4 lg:text-xl">
           A empresa que você chama quando está com problemas - ou quando quer
           evitar eles... na Smithson, acreditamos que a tecnologia deve ser uma
           aliada que simplifica a vida e impulsiona negócios, não o contrário.
@@ -37,10 +36,6 @@ export function Dna() {
           title="Parceria e Confiança Duradoura"
           description="Valorizamos nossas relações de longo prazo construídas. A confiança que estabelecemos é fruto de um trabalho consistente e qualitativo!"
         />
-      </div>
-
-      <div className="absolute -left-20 top-2/4 -translate-y-2/4 transform">
-        <DnaAnimate />
       </div>
 
       <div className="absolute bottom-4 right-1/3">

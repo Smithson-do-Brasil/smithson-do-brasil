@@ -8,8 +8,8 @@ import { ServicesItem } from './services-item'
 
 export function Services() {
   return (
-    <section className="container space-y-10 lg:space-y-20" id="services">
-      <h2 className="font-bold font-ppformula text-6xl italic">
+    <section className="container space-y-8 lg:space-y-20" id="services">
+      <h2 className="text-center font-bold font-ppformula text-4xl italic lg:text-start lg:text-6xl">
         Alguns de nossos serviços...
       </h2>
 
@@ -67,9 +67,11 @@ export function Services() {
       </Accordion.Root>
 
       <div className="flex flex-col items-center gap-8 lg:gap-24">
-        <h2 className="font-bold font-ppformula text-6xl italic">Tem mais!</h2>
+        <h2 className="font-bold font-ppformula text-4xl italic lg:text-6xl">
+          Tem mais!
+        </h2>
 
-        <div className="mt-12 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
           <ServicesItem
             icon="Cctv"
             title="Sistemas de Monitoramento"

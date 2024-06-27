@@ -11,7 +11,7 @@ interface IntroductionRootProps {
 export function IntroductionRoot({ children }: IntroductionRootProps) {
   return (
     <div
-      className="container flex flex-col items-center justify-center gap-8 py-16 text-zinc-950 dark:text-teal-200"
+      className="flex flex-col items-center justify-center gap-4 px-4 py-16 text-zinc-950 md:container dark:text-teal-200 md:gap-8"
       id="aboutUs"
     >
       <Link to="/servicos">

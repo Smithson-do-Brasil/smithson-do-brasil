@@ -7,7 +7,7 @@ export function NumbersIcon() {
         viewBox="0 0 239 272"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="z-10 w-2/4 dark:hidden"
+        className="z-10 w-full dark:hidden lg:max-w-[239px]"
       >
         <g filter="url(#filter0_d_134_10805)">
           <path
