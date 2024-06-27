@@ -2,6 +2,7 @@ import { Outlet, ScrollRestoration } from 'react-router-dom'
 
 import { Footer } from '@/components/footer/footer'
 import { Header } from '@/components/header'
+import { ScrollToTop } from '@/components/scroll-to-top'
 import { Whatsapp } from '@/components/whatsapp'
 
 export function Layout() {
@@ -15,6 +16,7 @@ export function Layout() {
         <Outlet />
 
         <Whatsapp />
+        <ScrollToTop />
       </div>
 
       <Footer />
