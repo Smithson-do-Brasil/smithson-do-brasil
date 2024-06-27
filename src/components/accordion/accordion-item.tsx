@@ -8,5 +8,9 @@ interface AccordionItemProps {
 }
 
 export function AccordionItem({ children, value }: AccordionItemProps) {
-  return <ShadcnAccordionItem value={value}>{children}</ShadcnAccordionItem>
+  return (
+    <ShadcnAccordionItem value={value} className="border-b-foreground">
+      {children}
+    </ShadcnAccordionItem>
+  )
 }

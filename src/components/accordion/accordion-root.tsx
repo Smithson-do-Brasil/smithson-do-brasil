@@ -8,7 +8,7 @@ interface AccordionRootProps {
 
 export function AccordionRoot({ children }: AccordionRootProps) {
   return (
-    <Accordion type="single" collapsible>
+    <Accordion type="single" collapsible defaultValue="item-1">
       {children}
     </Accordion>
   )

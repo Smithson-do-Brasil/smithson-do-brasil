@@ -11,11 +11,13 @@ export function ServicesItem({ icon, title, description }: ServicesItemProps) {
 
   return (
     <div className="flex items-start gap-4">
-      <div className="rounded-3xl bg-[#2364AA] p-4">
-        <LucideIcon color="white" className="h-6 w-6 lg:h-12 lg:w-12" />
+      <div className="rounded-3xl bg-zinc-950 p-4 dark:bg-zinc-50">
+        <LucideIcon className="h-6 w-6 text-zinc-50 dark:text-zinc-950 lg:h-12 lg:w-12" />
       </div>
       <div>
-        <h3 className="font-bold text-xl lg:text-2xl">{title}</h3>
+        <h3 className="font-bold text-xl text-foreground lg:text-2xl">
+          {title}
+        </h3>
         <p className="text-base text-muted-foreground lg:text-xl">
           {description}
         </p>

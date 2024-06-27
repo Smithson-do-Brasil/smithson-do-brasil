@@ -6,7 +6,7 @@ interface AccordionTriggerProps {
 
 export function AccordionTrigger({ title }: AccordionTriggerProps) {
   return (
-    <ShadcnAccordionTrigger className="text-2xl font-bold lg:text-4xl">
+    <ShadcnAccordionTrigger className="font-bold text-2xl lg:text-4xl">
       {title}
     </ShadcnAccordionTrigger>
   )
