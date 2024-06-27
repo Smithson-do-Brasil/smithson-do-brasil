@@ -10,54 +10,50 @@ import { Link } from 'react-router-dom'
 import { Form } from '../form'
 import { Nav } from '../nav'
 import { Separator } from '../ui/separator'
-import { FooterAnimation } from './footer-animation'
 import { FooterMenu } from './footer-menu'
 
 export function Footer() {
   return (
     <footer className="bg-teal-200 pt-16 dark:bg-zinc-950" id="contact">
-      <section className="container relative flex items-end justify-between overflow-hidden rounded-lg bg-muted px-0 text-foreground dark:bg-teal-200 dark:text-zinc-950">
-        <div className="w-full space-y-3 px-4 py-8 sm:w-2/4 lg:px-8 lg:py-12">
+      <section className="relative flex flex-col-reverse overflow-hidden bg-muted text-foreground lg:container dark:bg-teal-200 dark:text-zinc-950 lg:flex-row lg:items-end lg:justify-between lg:rounded-lg lg:px-0">
+        <div className="w-full px-4 py-8 text-center lg:w-2/4 lg:space-y-3 lg:px-8 lg:py-12 lg:text-start">
           <img
             src="icon-footer.svg"
             alt=""
-            className="absolute left-8 top-11"
+            className="absolute left-8 top-11 hidden lg:block"
           />
-          <h2 className="text-3xl font-bold lg:text-5xl">
+          <h2 className="font-bold text-2xl lg:text-4xl">
             Tudo em um só lugar!
           </h2>
-          <p className="text-lg lg:text-xl">
+          <p className="text-base lg:text-xl">
             Quem diria que era possível, não?
           </p>
         </div>
 
-        <img src="/hero-image.png" alt="" className="m-0 h-full" />
+        <img src="/hero-image.png" alt="" className="m-0 h-full max-w-full" />
       </section>
 
-      <section className="relative flex items-center justify-between overflow-hidden bg-teal-200 px-20 py-24 text-zinc-950 dark:bg-zinc-950">
-        <div className="space-y-5">
-          <h3 className="font-ppformula text-6xl font-bold dark:text-teal-200">
+      <section className="relative flex flex-col items-center justify-between gap-4 overflow-hidden bg-teal-200 px-8 py-8 text-zinc-950 dark:bg-zinc-950 lg:flex-row lg:gap-0 lg:px-20 lg:py-24">
+        <div className="w-full space-y-2 text-center lg:w-2/4 lg:space-y-5 lg:text-start">
+          <h3 className="font-bold font-ppformula text-4xl dark:text-teal-200 lg:text-6xl">
             Fale Conosco
           </h3>
-          <p className="font-medium text-xl dark:text-teal-200">
-            Precisando de suporte técnico ou
-            <br /> gostaria de discutir seu próximo
-            <br /> projeto?
+          <p className="font-medium text-base dark:text-teal-200 md:text-xl lg:max-w-80">
+            Precisando de suporte técnico ou gostaria de discutir seu próximo
+            projeto?
           </p>
-          <p className="font-medium text-xl dark:text-teal-200">
+          <p className="font-medium text-base dark:text-teal-200 lg:text-xl">
             Estamos aqui.
           </p>
         </div>
 
-        <Form className="z-10 w-2/4" />
-
-        <FooterAnimation />
+        <Form className="z-10 lg:w-2/4" />
       </section>
 
-      <section className="bg-zinc-50 text-zinc-950 dark:bg-zinc-950">
+      <section className="hidden bg-muted text-zinc-950 lg:block">
         <div className="container flex justify-between py-8 text-zinc-50">
           <div className="space-y-2">
-            <h3 className="text-2xl font-bold text-foreground">
+            <h3 className="font-bold text-2xl text-foreground">
               Smithson do Brasil
             </h3>
 
@@ -132,7 +128,7 @@ export function Footer() {
 
       <Separator className="bg-foreground" />
 
-      <section className="bg-zinc-50 dark:bg-zinc-950">
+      <section className="bg-muted">
         <div className="container flex flex-col items-center justify-between py-4 dark:text-zinc-50 lg:flex-row lg:gap-0">
           <p className="text-center text-sm">
             &copy;{new Date().getFullYear()} Smithson do Brasil - CNPJ

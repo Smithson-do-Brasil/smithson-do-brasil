@@ -1,18 +1,17 @@
 import { Separator } from '@/components/ui/separator'
 
-import { NumbersAnimate } from './numbers-animate'
 import { NumbersIcon } from './numbers-icon'
 import { NumbersItem } from './numbers-item'
 
 export function Numbers() {
   return (
-    <div className="relative space-y-24 py-32">
-      <section className="container flex items-center justify-between">
-        <div className="space-y-5">
-          <h2 className="font-bold font-ppformula text-6xl italic">
+    <div className="relative space-y-8 py-8 md:space-y-24 lg:py-32">
+      <section className="container flex flex-col-reverse items-center gap-4 md:flex-row lg:justify-between">
+        <div className="space-y-5 text-center md:text-start">
+          <h2 className="font-bold font-ppformula text-4xl italic lg:text-6xl">
             Nossos números
           </h2>
-          <p className="w-2/4 font-medium text-xl">
+          <p className="w-full font-medium text-base md:w-2/4 lg:text-xl">
             Premiada por diversas instituições como{' '}
             <span className="text-[#FF00FF]">X</span> e{' '}
             <span className="text-[#FF00FF]">Y</span> e representante direta de
@@ -25,16 +24,12 @@ export function Numbers() {
         <NumbersIcon />
       </section>
 
-      <div className="absolute right-0 top-8">
-        <NumbersAnimate />
-      </div>
-
       <section className="flex items-center justify-center">
-        <div className="flex flex-col items-center gap-10 lg:flex-row lg:gap-20">
+        <div className="flex flex-col items-center gap-10 md:flex-row lg:gap-20">
           <NumbersItem number={30} title="Anos de Experiência" />
-          <Separator className=" bg-muted-foreground lg:h-12 lg:w-[1px]" />
+          <Separator className=" bg-muted-foreground md:h-12 md:w-[1px]" />
           <NumbersItem number={3000} title="Clientes" />
-          <Separator className="bg-muted-foreground lg:h-12 lg:w-[1px]" />
+          <Separator className="bg-muted-foreground md:h-12 md:w-[1px]" />
           <NumbersItem number={20} title="Soluções e Serviços" />
         </div>
       </section>
