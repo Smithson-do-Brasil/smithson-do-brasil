@@ -10,8 +10,6 @@ import { Maintenance } from './pages/maintenance'
 import { router } from './routes'
 
 export function App() {
-  console.log(env.VITE_MAINTENANCE_MODE)
-
   return (
     <HelmetProvider>
       <ThemeProvider storageKey="smithson-theme">

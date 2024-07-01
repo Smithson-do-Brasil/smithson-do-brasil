@@ -60,7 +60,7 @@ export function Form(props: ComponentProps<'form'>) {
         props.className,
       )}
     >
-      <h3 className="text-xl font-bold text-zinc-950 lg:text-2xl">
+      <h3 className="font-bold text-xl text-zinc-950 lg:text-2xl">
         A um formulário de distância...
       </h3>
       <p className="text-center font-medium text-base text-zinc-950 lg:text-lg">
