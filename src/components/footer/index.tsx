@@ -35,14 +35,14 @@ export function Footer() {
 
       <section className="relative flex flex-col items-center justify-between gap-4 overflow-hidden bg-teal-200 px-8 py-8 text-zinc-950 dark:bg-zinc-950 lg:flex-row lg:gap-0 lg:px-20 lg:py-24">
         <div className="w-full space-y-2 text-center lg:w-2/4 lg:space-y-5 lg:text-start">
-          <h3 className="font-bold font-ppformula text-4xl dark:text-teal-200 lg:text-6xl">
+          <h3 className="font-bold font-ppformula text-4xl text-foreground lg:text-6xl">
             Fale Conosco
           </h3>
-          <p className="font-medium text-base dark:text-teal-200 md:text-xl lg:max-w-80">
+          <p className="font-medium text-base text-foreground md:text-xl lg:max-w-80">
             Precisando de suporte técnico ou gostaria de discutir seu próximo
             projeto?
           </p>
-          <p className="font-medium text-base dark:text-teal-200 lg:text-xl">
+          <p className="font-medium text-base text-foreground lg:text-xl">
             Estamos aqui.
           </p>
         </div>
@@ -50,8 +50,8 @@ export function Footer() {
         <Form className="z-10 lg:w-2/4" />
       </section>
 
-      <section className="hidden bg-muted text-zinc-950 lg:block">
-        <div className="container flex justify-between py-8 text-zinc-50">
+      <section className="bg-muted text-zinc-950">
+        <div className="container flex flex-col justify-between gap-4 py-8 text-zinc-50 lg:flex-row">
           <div className="space-y-2">
             <h3 className="font-bold text-2xl text-foreground">
               Smithson do Brasil
@@ -129,15 +129,14 @@ export function Footer() {
       <Separator className="bg-foreground" />
 
       <section className="bg-muted">
-        <div className="container flex flex-col items-center justify-between py-4 dark:text-zinc-50 lg:flex-row lg:gap-0">
-          <p className="text-center text-sm">
-            &copy;{new Date().getFullYear()} Smithson do Brasil - CNPJ
-            00.460.978/0001-36.
+        <div className="container flex flex-col items-start justify-between gap-1 py-4 text-xs dark:text-zinc-50 lg:flex-row lg:gap-0 lg:text-sm">
+          <p className="space-x-1">
+            &copy; <span>{new Date().getFullYear()} Smithson do Brasil</span>
           </p>
 
           <Link
             to="/politicas-de-privacidade-e-seguranca"
-            className="text-sm hover:underline"
+            className="underline"
           >
             Politicas de Privacidade e Segurança
           </Link>
