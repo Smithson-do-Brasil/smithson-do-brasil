@@ -3,7 +3,7 @@ import { DnaItem } from './dna-item'
 
 export function Dna() {
   return (
-    <section className="relative flex flex-col items-end justify-center gap-8 py-8 lg:gap-24 lg:py-[136px]">
+    <section className="relative flex flex-col items-end justify-center gap-8 lg:gap-24">
       <div className="container space-y-5 text-center lg:text-end">
         <h2 className="font-bold font-ppformula text-4xl italic lg:text-6xl">
           Nossa essência

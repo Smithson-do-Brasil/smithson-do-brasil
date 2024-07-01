@@ -2,7 +2,7 @@ import { AboutUsHeroImage } from './about-us-hero-image'
 
 export function AboutUs() {
   return (
-    <div className="relative md:py-8 lg:py-28">
+    <div className="relative">
       <section className="container flex flex-col items-end gap-4 text-center lg:flex-row lg:gap-12 lg:text-end">
         <AboutUsHeroImage />
 

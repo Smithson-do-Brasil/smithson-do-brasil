@@ -1,9 +1,4 @@
-import {
-  SiFacebook,
-  SiInstagram,
-  SiLinkedin,
-  SiWhatsapp,
-} from '@icons-pack/react-simple-icons'
+import { SiInstagram, SiLinkedin } from '@icons-pack/react-simple-icons'
 import { Mail, Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -74,14 +69,14 @@ export function Footer() {
               >
                 <SiInstagram size={20} />
               </a>
-              <a
+              {/* <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noreferrer"
                 className="text-foreground transition-all hover:brightness-90"
               >
                 <SiFacebook size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -111,10 +106,6 @@ export function Footer() {
             <Nav.Root className="flex flex-col items-start gap-1">
               <Nav.Link to="tel:+5521970452371">
                 <Phone size={16} />
-                (21) 97045-2371
-              </Nav.Link>
-              <Nav.Link to="https://api.whatsapp.com/send?l=pt&phone=5521970452371&text=Ol%C3%A1!%20Vim%20do%20site%20e%20preciso%20de%20ajuda.">
-                <SiWhatsapp size={16} />
                 (21) 97045-2371
               </Nav.Link>
               <Nav.Link to="mailto:contato@smithson.com.br">

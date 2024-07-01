@@ -4,6 +4,7 @@ import { AboutUs } from './components/about-us'
 import { Dna } from './components/dna'
 import { Introduction } from './components/introduction'
 import { Numbers } from './components/numbers'
+import { Partners } from './components/partners'
 import { Services } from './components/services'
 
 export function Home() {
@@ -11,7 +12,7 @@ export function Home() {
     <>
       <Helmet title="Home" />
 
-      <div className="bg-teal-200 text-foreground dark:bg-zinc-950 dark:text-teal-200">
+      <div className="space-y-8 bg-teal-200 text-foreground dark:bg-zinc-950 dark:text-teal-200 lg:space-y-16">
         <Introduction.Root>
           <Introduction.Button
             href="/servicos"
@@ -29,8 +30,8 @@ export function Home() {
         <Dna />
         <Services />
 
-        {/* <Partners />
-        <Review /> */}
+        <Partners />
+        {/* <Review /> */}
       </div>
     </>
   )

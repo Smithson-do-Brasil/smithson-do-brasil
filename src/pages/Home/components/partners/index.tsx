@@ -95,17 +95,12 @@ export function Partners() {
       aria-label="Empresas que confiam no nosso trabalho"
       className="flex flex-col items-center justify-center gap-8 lg:gap-20"
     >
-      <div className="container space-y-8 text-center">
-        <h2 className="text-center text-3xl font-bold lg:text-5xl">
-          Empresas que confiam no nosso trabalho
+      <div className="container space-y-5 text-center">
+        <h2 className="font-bold font-ppformula text-4xl italic lg:text-6xl">
+          Nossos parceiros
         </h2>
-
-        <p className="font-medium text-lg lg:text-2xl">
-          Diga adeus às complexidades do passado e desbloqueie um caminho mais
-          prático para o sucesso de sua operação. Dê boas vindas à{' '}
-          <strong className="text-[#2364AA]">
-            era da simplicidade e eficiência.
-          </strong>
+        <p className="w-full font-medium text-base lg:text-xl">
+          Confirme com nossos parceiros de estrada...
         </p>
       </div>
 

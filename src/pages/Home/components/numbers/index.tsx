@@ -5,7 +5,7 @@ import { NumbersItem } from './numbers-item'
 
 export function Numbers() {
   return (
-    <div className="relative space-y-8 py-8 md:space-y-24 lg:py-32">
+    <div className="relative space-y-8 md:space-y-24">
       <section className="container flex flex-col-reverse items-center gap-4 md:flex-row lg:justify-between">
         <div className="space-y-5 text-center md:text-start">
           <h2 className="font-bold font-ppformula text-4xl italic lg:text-6xl">
