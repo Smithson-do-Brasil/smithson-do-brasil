@@ -5,18 +5,15 @@ import { Link } from 'react-router-dom'
 import { Form } from '../form'
 import { Nav } from '../nav'
 import { Separator } from '../ui/separator'
+import { FooterIcon } from './footer-icon'
 import { FooterMenu } from './footer-menu'
 
 export function Footer() {
   return (
     <footer className="bg-teal-200 pt-16 dark:bg-zinc-950" id="contact">
-      <section className="relative flex flex-col-reverse overflow-hidden bg-muted text-foreground lg:container dark:bg-teal-200 dark:text-zinc-950 lg:flex-row lg:items-end lg:justify-between lg:rounded-lg lg:px-0">
-        <div className="w-full px-4 py-8 text-center lg:w-2/4 lg:space-y-3 lg:px-8 lg:py-12 lg:text-start">
-          <img
-            src="icon-footer.svg"
-            alt=""
-            className="absolute left-8 top-11 hidden lg:block"
-          />
+      <section className="container relative flex flex-col-reverse overflow-hidden text-foreground lg:flex-row lg:items-end lg:justify-between lg:rounded-lg lg:bg-muted lg:px-0">
+        <div className="w-full bg-muted px-4 py-8 text-center lg:w-2/4 lg:space-y-3 lg:bg-transparent lg:px-8 lg:py-12 lg:text-start">
+          <FooterIcon />
           <h2 className="font-bold text-2xl lg:text-4xl">
             Tudo em um só lugar!
           </h2>
