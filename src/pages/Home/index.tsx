@@ -12,7 +12,7 @@ export function Home() {
     <>
       <Helmet title="Home" />
 
-      <div className="space-y-8 bg-teal-200 text-foreground dark:bg-zinc-950 dark:text-teal-200 lg:space-y-16">
+      <div className="space-y-8 bg-teal-200 text-foreground dark:bg-zinc-950 lg:space-y-16">
         <Introduction.Root>
           <Introduction.Button
             href="/servicos"
