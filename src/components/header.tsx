@@ -1,11 +1,15 @@
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
+import { ChangeLanguage } from './change-language'
 import { HeaderMobile } from './header-mobile'
 import { Logo } from './logo'
 import { Nav } from './nav'
 import { ThemeToggle } from './theme/theme-toggle'
 
 export function Header() {
+  const { t } = useTranslation()
+
   // const navLinks = [
   //   { title: 'Home', to: '/' },
   //   { title: 'Sobre', to: '/quem-somos' },
@@ -15,9 +19,9 @@ export function Header() {
 
   const temporaryNavLinks = [
     // { title: 'Home', to: '#introduction' },
-    { title: 'Sobre', to: '#aboutUs' },
-    { title: 'Serviços', to: '#services' },
-    { title: 'Contato', to: '#contact' },
+    { title: t('menu.about'), to: '#aboutUs' },
+    { title: t('menu.services'), to: '#services' },
+    { title: t('menu.contact'), to: '#contact' },
   ]
 
   return (
@@ -39,7 +43,8 @@ export function Header() {
             ))}
           </Nav.Root>
 
-          <div className="flex items-center">
+          <div className="flex items-center gap-2">
+            <ChangeLanguage />
             <ThemeToggle />
           </div>
         </div>
