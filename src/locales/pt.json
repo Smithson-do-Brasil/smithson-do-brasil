@@ -4,6 +4,10 @@
       "about": "Sobre",
       "services": "Serviços",
       "contact": "Contato"
+    },
+    "languages": {
+      "en": "Inglês",
+      "pt": "Português"
     }
   }
 }

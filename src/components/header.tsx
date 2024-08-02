@@ -1,8 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
-import { ChangeLanguage } from './change-language'
 import { HeaderMobile } from './header-mobile'
+import { LanguageToggle } from './language-toggle'
 import { Logo } from './logo'
 import { Nav } from './nav'
 import { ThemeToggle } from './theme/theme-toggle'
@@ -44,7 +44,7 @@ export function Header() {
           </Nav.Root>
 
           <div className="flex items-center gap-2">
-            <ChangeLanguage />
+            <LanguageToggle />
             <ThemeToggle />
           </div>
         </div>

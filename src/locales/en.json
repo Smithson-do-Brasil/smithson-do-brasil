@@ -4,6 +4,10 @@
       "about": "About",
       "services": "Services",
       "contact": "Contact"
+    },
+    "languages": {
+      "en": "English",
+      "pt": "Portuguese"
     }
   }
 }
